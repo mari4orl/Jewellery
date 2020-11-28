@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8">
+    <title>Smart Device</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Печатные платы, компоненты для светотехники, электронные комплектующие">
+    <meta name="keywords" content="Печатные платы, светотехника">
+    <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
+    <link rel="preload" href="fonts/pt-mono-v8-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+  </head>
+  <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <header class="page-header">
+      <nav class="page-header__navigation navigation">
+        <picture class="navigation__logo">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/logo-desk@1x.webp 1x, img/logo-desk@2x.webp 2x">
+          <source type="image/webp" srcset="img/logo-mob@1x.webp 1x, img/logo-mob@2x.webp 2x">
+
+          <source media="(min-width: 768px)" srcset="img/logo-desk@1x.png 1x, img/logo-desk@2x.png 2x">
+          <img src="img/logo-mob@1x.png" srcset="img/logo-mob@2x.png 2x" alt="Логотип smart device">
+        </picture>
+
+        <div class="navigation__links-container">
+          <a href="mailto:info@sd.ru" class="navigation__link navigation__link--email" aria-label="Наш почтовый адрес">
+            <svg class="navigation__envelope-img" width="19" height="14" xml:space="preserve">
+              <use xlink:href="#envelope-icon"></use>
+            </svg>
+            <span class="navigation__text">info@sd.ru</span>
+          </a>
+          <a href="tel:+74950005252" class="navigation__link navigation__link--tel" aria-label="Наш телефон">
+            <svg class="navigation__phone-img" width="18" height="18" xml:space="preserve">
+              <use xlink:href="#phone-call-icon"></use>
+            </svg>
+            <span class="navigation__text">+7 (495) 000 52 52</span>
+          </a>
+        </div>
+        <a href="#" class="navigation__btn btn">Заказать звонок</a>
+      </nav>
+      <div class="page-header__inner">
+        <h1 class="page-header__title">Печатные платы</h1>
+        <p class="page-header__text">производство и монтаж, поставка комплектующих, блоков и модулей</p>
+        <a href="#form" class="page-header__form btn anchor-link">
+          <span class="page-header__desktop-text">Получить бесплатную консультацию</span>
+          <span class="page-header__mobile-text">Бесплатная консультация</span>
+        </a>
+        <a href="#features" class="page-header__scroll anchor-link">Скролл вниз</a>
+      </div>
+    </header>
+
+    <main class="page-main">
+      <section class="features" id="features">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul class="features__list">
+          <li class="features__item">
+            <svg class="features__img" width="29" height="35" xml:space="preserve">
+              <use xlink:href="#stopwatch-icon"></use>
+            </svg>
+            <h3 class="features__title">Оперативные сроки </h3>
+            <p class="features__text">Усовершенствованная логистическая система позволяет нам просчитывать стоимость, производить и доставлять заказы плат и комплектующих в самые короткие сроки</p>
+          </li>
+          <li class="features__item features__item--supplier">
+            <svg class="features__img" width="35" height="35" xml:space="preserve">
+              <use xlink:href="#hired-icon"></use>
+            </svg>
+            <h3 class="features__title">Крупные поставщики</h3>
+            <p class="features__text">
+              Нашими поставщиками являются такие крупные мировые компании как: OSRAM, CREE, HOLGLITRONIC, REFOND. Сотрудничество с такими компаниями обеспичивает хорошее качество нашей продукции.
+            </p>
+          </li>
+          <li class="features__item features__item--policy">
+            <svg class="features__img" width="36" height="31" xml:space="preserve">
+              <use xlink:href="#detective-icon"></use>
+            </svg>
+            <h3 class="features__title">Полная конфиденциальность</h3>
+            <p class="features__text">
+              По желанию клиента  мы обеспечиваем полную конфеденциальность.
+            </p>
+          </li>
+          <li class="features__item features__item--person">
+            <svg class="features__img" width="35" height="35" xml:space="preserve">
+              <use xlink:href="#tag-icon"></use>
+            </svg>
+            <h3 class="features__title">Персонализация стоимости</h3>
+            <p class="features__text">
+              Мы  подбираем определенную фабрику, поставщиков, вид доставки, чтобы установить ту цену, которая Вас устраивает.
+            </p>
+          </li>
+        </ul>
+
+        <div class="features__about-us about-us" id="about-us">
+          <h2 class="about-us__title">О компании</h2>
+          <p class="about-us__text">Мы поставляем электронные комплектующие, производим печатные платы и предоставляем мировые технологии с 1997 года. Выполняем срочные заказы и пилотные образцы до 10 дней.</p>
+          <p class="about-us__text">
+            Наши поставщики - мировые производители электронных компонентов: OSRAM, CREE, HOLGLITRONIC, REFOND. Печатные платы и комплектующие Service Devices применяются на предприятиях Российских Железных Дорог<span class="about-us__desktop"> (РЖД), РоссАвтоПрома (ВАЗ, АвтоГАЗ), МинАтома, СпецМедТехники. Среди наших клиентов крупнейшие Производители светотехники России</span>.<span class="about-us__mobile">.</span>
+          </p>
+          <a href="#" class="about-us__details btn">Подробнее</a>
+        </div>
+      </section>
+
+      <section class="catalog" id="catalog">
+        <div class="catalog__container">
+          <h2 class="catalog__title">Service Device предлагает следующие товары и услуги</h2>
+          <ul class="catalog__list">
+            <li class="catalog__item catalog__item--production" id="production">
+              <a href="#" class="catalog__link">
+                Производство печатных плат
+              </a>
+            </li>
+            <li class="catalog__item catalog__item--assembling" id="assembling">
+              <a href="#" class="catalog__link">
+                Монтаж печатных плат
+              </a>
+            </li>
+            <li class="catalog__item catalog__item--components" id="components">
+              <a href="#" class="catalog__link">
+                Комплектующие для светотехники
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <section class="form">
+        <h2 class="visually-hidden">Напишите нам свои вопросы</h2>
+        <div class="form__container">
+          <form action="https://echo.htmlacademy.ru" method="post" name="form" id="form">
+            <fieldset class="form__fieldset">
+              <legend class="form__title">Остались вопросы? Задайте их нам!</legend>
+              <p class="form__text">Мы проконсультируем Вас бесплатно</p>
+              <div class="form__top">
+                <input type="text" name="name" id="name" placeholder="Имя" aria-label="Введите ваше имя" required>
+                <input type="tel" class="phone" name="phone" id="phone" placeholder="Телефон" aria-label="Введите ваш номер телефона"  maxlength="17" minlength="17" required>
+              </div>
+              <textarea id="message" placeholder="Ваш вопрос" aria-label="Введите ваш вопрос" rows="5" required></textarea>
+              <div class="form__bottom">
+                <input type="checkbox" class="visually-hidden" name="agreement" id="agreement" value="agree" required>
+                <label for="agreement" class="form__agr-label">Я согласен на обработку  персональных данных</label>
+                <button class="form__btn btn" type="submit">Задать вопрос</button>
+              </div>
+            </fieldset>
+          </form>
+        </div>
+
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__inner">
+        <div class="page-footer__head-wrapper">
+          <picture class="page-footer__logo">
+            <source type="image/webp" srcset="img/logo-footer@1x.webp 1x, img/logo-footer@2x.webp 2x">
+            <img src="img/logo-footer@1x.png" srcset="img/logo-footer@2x.png 2x" alt="Логотип smart device">
+          </picture>
+          <p class="page-footer__text-tablet">1999-2018 SD Service Devices</p>
+          <ul class="page-footer__socials">
+            <li class="page-footer__social">
+              <a href="#" class="page-footer__link" aria-label="Ссылка на нас в Фэйсбуке">
+                <svg class="page-footer__fb-img" width="27" height="27" xml:space="preserve">
+                  <use xlink:href="#fb-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social">
+              <a href="#" class="page-footer__link" aria-label="Ссылка на нас в Одноклассниках">
+                <svg class="page-footer__ok-img" width="27" height="27" xml:space="preserve">
+                  <use xlink:href="#ok-icon"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="page-footer__social">
+              <a href="#" class="page-footer__link" aria-label="Ссылка на нас во Вконтакте">
+                <svg class="page-footer__vk-img" width="27" height="27" xml:space="preserve">
+                  <use xlink:href="#vk-icon"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__sections">
+          <input class="visually-hidden acc nojs" type="checkbox" name="section" id="section">
+          <label for="section" class="page-footer__title">Разделы сайта</label>
+          <ul class="page-footer__sections-list">
+            <li class="page-footer__sections-item">
+              <a href="#about-us" class="anchor-link">О компании</a>
+            </li>
+            <li class="page-footer__sections-item">
+              <a href="#catalog" class="anchor-link">Продукты</a>
+            </li>
+            <li class="page-footer__sections-item">
+              <a href="#production" class="anchor-link">Производство печатных плат</a>
+            </li>
+            <li class="page-footer__sections-item">
+              <a href="#assembling" class="anchor-link">Монтаж печатных плат</a>
+            </li>
+          </ul>
+          <ul class="page-footer__sections-list page-footer__sections-list--second">
+            <li class="page-footer__sections-item">
+              <a href="#components" class="anchor-link">Комплектующие</a>
+            </li>
+            <li class="page-footer__sections-item">
+              <a href="#">Доставка</a>
+            </li>
+            <li class="page-footer__sections-item">
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="page-footer__contacts">
+          <input class="visually-hidden acc nojs" type="checkbox" name="contacts" id="contacts">
+          <label for="contacts" class="page-footer__title">Наш офис</label>
+          <ul class="page-footer__contacts-list">
+            <li class="page-footer__contacts-item">
+              г. Мытищи, Олимпийский проспект, д.10
+            </li>
+            <li class="page-footer__contacts-item">
+              <a href="tel:+74955894050" class="page-footer__contacts-link">
+                +7 (495) 589-40-50
+              </a>
+            </li>
+            <li class="page-footer__contacts-item">
+              <a href="tel:+79250038767" class="page-footer__contacts-link">
+                +7 (925) 003-87-67
+              </a>
+            </li>
+            <li class="page-footer__contacts-item">
+              <a href="tel:+792692608079" class="page-footer__contacts-link">
+                +7 (926) 926-080-79
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="page-footer__footer-wrapper">
+        <div class="page-footer__footer">
+          <p class="page-footer__text page-footer__text--copyright">Все права защищены</p>
+          <p class="page-footer__text page-footer__text--company">1999-2018 SD Service Devices</p>
+          <p class="page-footer__text page-footer__text--policy">
+            <a href="#">Условия конфиденциальности</a>
+          </p>
+          <p class="page-footer__text page-footer__text--developer">
+            <a href="#">Developed by wow studio</a>
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <section class="modal modal--closed">
+      <h2 class="visually-hidden">Форма заказа обратного звонка</h2>
+      <div class="modal__overlay"></div>
+      <div class="modal__content">
+        <button type="button" class="modal__close-btn">Закрыть</button>
+        <form action="https://echo.htmlacademy.ru" method="post" name="form" id="modal-form">
+          <fieldset class="modal__fieldset">
+            <legend class="modal__title">Закажите звонок</legend>
+            <p class="modal__text">Оставьте контакты, мы проконсультируем вас бесплатно в удобное время</p>
+
+            <input type="text" name="name" id="modal-name" placeholder="Имя" value="" required>
+            <input type="tel" class="phone" name="phone" id="modal-phone" placeholder="Телефон" value="" maxlength="17" minlength="17" required>
+            <textarea id="modal-message" placeholder="Ваш вопрос" rows="5" required></textarea>
+
+            <input type="checkbox" class="visually-hidden" name="agreement" id="modal-agreement" value="agree" required>
+            <label for="modal-agreement" class="modal__agr-label">Я согласен на обработку  персональных данных</label>
+            <button class="modal__btn btn" type="submit">Отправить</button>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
+    <script src="js/main.min.js"></script>
+  </body>
+</html>
