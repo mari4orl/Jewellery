@@ -1,26 +1,53 @@
 @font-face {
-  font-family: "Roboto Condensed";
+  font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
+  font-weight: normal;
   font-display: swap;
-  src: url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2") format("woff2"),
-    url("../fonts/roboto-condensed-v19-latin_cyrillic-regular.woff") format("woff");
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"),
+    url("../fonts/Poppins-Regular.woff") format("woff");
 }
 
 @font-face {
-  font-family: "Roboto Condensed";
+  font-family: "Poppins";
   font-style: normal;
-  font-weight: 700;
+  font-weight: 500;
   font-display: swap;
-  src: url("../fonts/roboto-condensed-v19-latin_cyrillic-700.woff2") format("woff2"),
-    url("../fonts/roboto-condensed-v19-latin_cyrillic-700.woff") format("woff");
+  src: url("../fonts/Poppins-Medium.woff2") format("woff2"),
+    url("../fonts/Poppins-Medium.woff") format("woff");
 }
 
 @font-face {
-  font-family: "PT Mono";
+  font-family: "Poppins";
   font-style: normal;
-  font-weight: 400;
+  font-weight: bold;
   font-display: swap;
-  src: url("../fonts/pt-mono-v8-latin_cyrillic-regular.woff2") format("woff2"),
-    url("../fonts/pt-mono-v8-latin_cyrillic-regular.woff") format("woff");
+  src: url("../fonts/Poppins-Bold.woff2") format("woff2"),
+    url("../fonts/Poppins-Bold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 500;
+  font-display: swap;
+  src: url("../fonts/CormorantGaramond-Medium.woff2") format("woff2"),
+  url("../fonts/CormorantGaramond-Medium.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: 600;
+  font-display: swap;
+  src: url("../fonts/CormorantGaramond-SemiBold.woff2") format("woff2"),
+    url("../fonts/CormorantGaramond-SemiBold.woff") format("woff");
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  font-style: normal;
+  font-weight: bold;
+  font-display: swap;
+  src: url("../fonts/CormorantGaramond-Bold.woff2") format("woff2"),
+    url("../fonts/CormorantGaramond-Bold.woff") format("woff");
 }
