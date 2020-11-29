@@ -1,0 +1,61 @@
+.page-footer {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.page-footer__container {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 100px 98px;
+  box-sizing: border-box;
+
+  display: flex;
+}
+
+.page-footer__title {
+  font-family: "Cormorant Garamond";
+  font-size: 34px;
+  line-height: 44px;
+  margin: 0;
+  margin-bottom: 25px;
+  letter-spacing: 0.03em;
+}
+
+.page-footer__form {
+  width: 500px;
+  border-bottom: 1px solid #ffffff;
+  padding-bottom: 5px;
+
+  display: flex;
+
+
+  & input {
+    flex-grow: 1;
+    background-color: transparent;
+    border: none;
+
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: 500;
+    color: #9b9997;
+  }
+}
+
+.page-footer__btn {
+  background-color: transparent;
+  border: none;
+  min-width: 103px;
+  padding-right: 41px;
+  box-sizing: border-box;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 29px;
+    height: 9px;
+    top: 7px;
+    right: 0;
+    background-image: url("../img/arrow.svg");
+  }
+}
