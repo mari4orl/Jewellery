@@ -1,0 +1,131 @@
+.page-header {
+  background-color: #ffffff;
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    bottom: 71px;
+    width: 100%;
+    height: 1px;
+    background-color: #f6f5f4;
+  }
+
+  & a {
+    text-decoration: none;
+
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+  }
+
+  & input[type="search"] {
+    width: 180px;
+    border: none;
+    outline-color: #f6f5f4;
+  }
+
+  & button {
+    background-color: transparent;
+    border: none;
+  }
+}
+
+.page-header__head {
+  max-width: 1366px;
+  margin: 0 auto;
+  padding: 41px 98px 19px;
+  box-sizing: border-box;
+
+  display: flex;
+  align-items: center;
+}
+
+.page-header__logo {
+  margin-left: 24.817%;
+  // margin-right: 31.698%;
+  margin-right: auto;
+}
+
+.page-header__login {
+  width: 38px;
+  margin-right: 35px;
+  color: #1d1613;
+}
+
+.page-header__cart {
+  width: 49px;
+  color: #1d1613;
+}
+
+.page-header__cart svg {
+  display: none;
+}
+
+@media (max-width: 1023px) {
+  .page-header {
+    &::after {
+      display: none;
+    }
+  }
+
+  .page-header__head {
+    padding: 30px 45px;
+    max-width: 768px;
+
+    & form {
+      display: none;
+    }
+  }
+
+  .page-header--colored {
+    background-color: #a87b62;
+  }
+
+  .page-header input[type="checkbox"]:checked ~ .page-header__toggle {
+    background-image: url("../img/toggle-white.svg");
+  }
+
+  .page-header input[type="checkbox"]:checked ~ .page-header__logo svg {
+    stroke: #ffffff;
+  }
+
+  .page-header__toggle {
+    cursor: pointer;
+    display: block;
+    width: 25px;
+    height: 16px;
+    background-image: url("../img/toggle.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+  }
+
+  .page-header__logo {
+    margin: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  .page-header__login {
+    display: none;
+  }
+
+  .page-header__cart {
+    width: auto;
+
+    & span {
+    display: none;
+    }
+
+    & svg {
+      display: block;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .page-header__head {
+    padding: 20px 15px;
+    max-width: 320px;
+  }
+}
