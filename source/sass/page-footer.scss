@@ -7,9 +7,17 @@
   max-width: 1366px;
   margin: 0 auto;
   padding: 100px 98px;
+  padding-bottom: 80px;
   box-sizing: border-box;
 
   display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.page-footer__mailing {
+  width: 36.6%;
+  margin-bottom: 30px;
 }
 
 .page-footer__title {
@@ -21,8 +29,11 @@
   letter-spacing: 0.03em;
 }
 
+.page-footer__text {
+  color: #9b9997;
+}
+
 .page-footer__form {
-  width: 500px;
   border-bottom: 1px solid #ffffff;
   padding-bottom: 5px;
 
@@ -41,6 +52,10 @@
   }
 }
 
+.page-footer__form input::placeholder {
+  color: #9b9997;
+}
+
 .page-footer__btn {
   background-color: transparent;
   border: none;
@@ -57,5 +72,107 @@
     top: 7px;
     right: 0;
     background-image: url("../img/arrow.svg");
+  }
+}
+
+.page-footer__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.page-footer__item {
+  margin-bottom: 20px;
+
+  & a:hover {
+    color: #a87b62;
+  }
+
+  & a {
+    text-decoration: none;
+    font-weight: 500;
+    line-height: 21px;
+
+    color: #ffffff;
+  }
+}
+
+.page-footer__list--third {
+  min-width: 115px;
+}
+
+.page-footer__item svg {
+  margin-right: 15px;
+}
+
+.page-footer__item--fb svg {
+  margin-right: 18px;
+}
+
+@media (max-width: 1023px) {
+  .page-footer__container {
+    max-width: 768px;
+    padding-top: 60px;
+    padding-bottom: 40px;
+    padding-left: 45px;
+    padding-right: 150px;
+  }
+
+  .page-footer__mailing {
+    width: 100%;
+    margin-bottom: 48px;
+  }
+}
+
+@media (max-width: 767px) {
+  .page-footer__container {
+    max-width: 320px;
+    padding-bottom: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    flex-direction: column;
+  }
+
+  .page-footer__mailing {
+    margin-bottom: 50px;
+  }
+
+  .page-footer__text,
+  .page-footer__title {
+    max-width: 226px;
+  }
+
+  .page-footer__list {
+    margin-bottom: 30px;
+  }
+
+  .page-footer__list--third {
+    display: flex;
+
+    & .page-footer__item {
+      margin-bottom: 0;
+      margin-right: 30px;
+    }
+
+    & span {
+      display: none;
+    }
+  }
+
+  .page-footer__item--fb svg {
+    width: 12px;
+    height: 21px;
+  }
+
+  .page-footer__item--inst svg,
+  .page-footer__item--pin svg {
+    width: 20px;
+    height: 21px;
+  }
+
+  .page-footer__item--tw svg {
+    width: 20px;
+    height: 18px;
   }
 }
