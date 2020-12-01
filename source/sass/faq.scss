@@ -1,0 +1,35 @@
+.faq {
+  max-width: 1366px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 198px;
+  padding-right: 198px;
+  padding-bottom: 119px;
+}
+
+.faq__title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: bold;
+  font-size: 34px;
+  line-height: 44px;
+  margin: 0;
+  margin-bottom: 60px;
+  text-align: center;
+}
+
+.faq__question {
+  display: none;
+}
+
+.nojs ~ .faq__question {
+  display: block;
+}
+
+.page-footer input[id="1question"]:checked ~ .faq__question,
+.page-footer input[id="2question"]:checked ~ .faq__question,
+.page-footer input[id="3question"]:checked ~ .faq__question,
+.page-footer input[id="4question"]:checked ~ .faq__question {
+  display: block;
+  padding: 0;
+  margin-top: 5px;
+}

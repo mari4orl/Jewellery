@@ -1,0 +1,223 @@
+.blog {
+  max-width: 1366px;
+  padding-left: 98px;
+  padding-right: 98px;
+  padding-bottom: 130px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.blog__title {
+  text-align: center;
+  line-height: 44px;
+  font-size: 34px;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-family: "Cormorant Garamond", serif;
+}
+
+.blog__link {
+  align-self: center;
+  font-weight: 500;
+  line-height: 21px;
+  color: #1d1613;
+  text-decoration: none;
+
+  margin-bottom: 40px;
+
+  border-bottom: 1px solid #a87b62;
+}
+
+.blog__container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.blog__wrapper,
+.blog__card--third {
+  width: 48.7%;
+}
+
+.blog__card--first {
+  background-image: url("../img/blog-care-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+.blog__article {
+  width: 285px;
+  min-height: 300px;
+  margin-left: auto;
+  padding-top: 71px;
+  padding-bottom: 71px;
+  padding-left: 60px;
+  padding-right: 60px;
+  box-sizing: border-box;
+
+  text-align: center;
+  background-color: #f0eae4;
+}
+
+.blog__date {
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  color: #9b9997
+}
+
+.blog__article-title {
+  font-family: "Cormorant Garamond", serif;
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 34px;
+  margin: 0;
+  margin-bottom: 25px;
+  margin-top: 15px;
+}
+
+.blog__full-article {
+  font-weight: 500;
+  line-height: 21px;
+  color: #1d1613;
+  text-decoration: none;
+  border-bottom: 1px solid #a87b62;
+}
+
+.blog__card--second {
+  background-image: url("../img/blog-power-desktop@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: right;
+  background-size: contain;
+
+  & .blog__article {
+    margin-left: 0;
+    margin-right: auto;
+  }
+}
+
+.blog__card--third {
+  background-image: url("../img/blog-trends-desktop@1x.jpg");
+  background-repeat: no-repeat;
+
+  display: flex;
+
+  & .blog__article {
+    margin-top: auto;
+    height: 315px;
+    padding-top: 95px;
+    padding-bottom: 96px;
+  }
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .blog__card--first {
+    background-image: url("../img/blog-care-desktop@2x.jpg");
+    background-size: 285px 300px;
+  }
+
+  .blog__card--second {
+    background-image: url("../img/blog-power-desktop@2x.jpg");
+    background-size: 285px 300px;
+  }
+
+  .blog__card--third {
+    background-image: url("../img/blog-trends-desktop@2x.jpg");
+    background-size: 570px 630px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .blog {
+    max-width: 768px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-bottom: 30px;
+  }
+
+  .blog__container {
+    flex-direction: column;
+  }
+
+  .blog__wrapper,
+  .blog__card--third {
+    width: 100%;
+  }
+
+  .blog__card {
+    margin-bottom: 50px;
+  }
+
+  .blog__card--first {
+    background-image: url("../img/blog-care-tab@1x.jpg");
+    background-size: 339px 300px;
+  }
+
+  .blog__card--second {
+    background-image: url("../img/blog-power-tab@1x.jpg");
+    background-size: auto;
+  }
+
+  .blog__card--third {
+    background-image: url("../img/blog-trends-tab@1x.jpg");
+    background-size: auto;
+
+    & .blog__article {
+      height: 300px;
+      padding-top: 88px;
+      padding-bottom: 88px;
+    }
+  }
+
+  .blog__article {
+    width: 339px;
+  }
+}
+
+@media (max-width: 767px) {
+  .blog {
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 40px;
+  }
+
+  .blog__card {
+    margin-bottom: 40px;
+    min-height: 512px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .blog__article {
+    margin-top: auto;
+    width: 290px;
+    min-height: 256px;
+    padding-top: 49px;
+    padding-bottom: 49px;
+  }
+
+  .blog__card--first {
+    background-image: url("../img/blog-care-mob@1x.jpg");
+    background-size: auto;
+  }
+
+  .blog__card--second {
+    background-image: url("../img/blog-power-mob@1x.jpg");
+    background-size: auto;
+    background-position: top;
+  }
+
+  .blog__card--third {
+    background-image: url("../img/blog-trends-mob@1x.jpg");
+    background-size: auto;
+
+    & .blog__article {
+      height: 256px;
+      padding-top: 66px;
+      padding-bottom: 66px;
+    }
+  }
+}

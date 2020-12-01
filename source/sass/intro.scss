@@ -1,0 +1,62 @@
+.intro {
+  background-image: url("../img/intro-main.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 463px;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .intro {
+    background-image: url("../img/intro-main@2x.jpg");
+  }
+}
+
+.intro__title {
+  margin: 0;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 45px;
+  line-height: 58px;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+
+.intro__text {
+  margin: 0;
+
+  font-family: Cormorant Garamond;
+  font-style: italic;
+  font-size: 38px;
+  line-height: 49px;
+  color: #ffffff;
+}
+
+@media (max-width: 1023px) {
+  .intro {
+    background-image: url("../img/intro-tablet.jpg");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url("../img/intro-tablet@2x.jpg");
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .intro {
+    background-image: url("../img/intro-mob.jpg");
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .intro {
+      background-image: url("../img/intro-mob@2x.jpg");
+    }
+  }
+}
