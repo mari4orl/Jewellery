@@ -40,17 +40,9 @@
   margin: 0;
 }
 
-.slider__item {
-  margin-right: 30px;
-  width: 270px;
-  box-sizing: border-box;
-
-  & a {
-    display: block;
-    margin: 0;
-  }
+.slider__item a {
+  display: block;
 }
-
 
 .slick-next,
 .slick-prev {
@@ -76,6 +68,7 @@
     background-image: url("../img/arrow-slider.svg");
     width: 29px;
     height: 9px;
+    top: 0;
   }
 }
 
@@ -87,6 +80,117 @@
   left: 0;
   &::before {
     transform: rotate(-180deg);
+    left: 0;
+  }
+}
+
+.slider__title-link {
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 21px;
+  color: #1d1613;
+
+
+  & h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    margin: 0;
+    margin-top: 25px;
+    margin-bottom: 15px;
+  }
+}
+
+.slick-slide {
+  // margin-right: 30px;
+  margin: 0;
+}
+
+.slider__item p {
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+  line-height: 18px;
+  font-size: 14px;
+  color: #1d1613;
+}
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+
+  padding: 0;
+  margin-top: 60px;
+
+  & button {
+    background-color: transparent;
+    border: none;
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 21px;
+    color: #9b9997;
+
+    margin-right: 15px;
+
+    outline: none;
+  }
+}
+
+.slick-active button {
+  color: #1d1613;
+}
+
+@media (max-width: 1023px) {
+  .slider {
+    max-width: 768px;
+
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 80px;
+    padding-bottom: 80px;
   }
 
+  .slick-next,
+  .slick-prev {
+    width: 36px;
+    height: 15px;
+
+    &::before {
+      width: 36px;
+      height: 15px;
+      background-image: url("../img/arrow-tab.svg");
+    }
+  }
+
+  .slick-dots {
+    margin-top: 50px;
+  }
+}
+
+@media (max-width: 767px) {
+  .slider {
+    max-width: 320px;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 70px;
+    padding-bottom: 70px;
+  }
+
+  .slick-next,
+  .slick-prev {
+    width: 0;
+    height: 0;
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .slick-dots {
+    margin-top: 40px;
+  }
 }
