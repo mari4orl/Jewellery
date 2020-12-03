@@ -49,7 +49,13 @@
     line-height: 21px;
     font-weight: 500;
     color: #9b9997;
+    outline: none;
   }
+}
+
+.page-footer__form input:hover,
+.page-footer__form input:focus {
+  outline: 1px solid #9b9997;
 }
 
 .page-footer__form input::placeholder {
@@ -73,6 +79,14 @@
     right: 0;
     background-image: url("../img/arrow.svg");
   }
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.3;
+  }
 }
 
 .page-footer__list {
@@ -84,10 +98,6 @@
 .page-footer__item {
   margin-bottom: 20px;
 
-  & a:hover {
-    color: #a87b62;
-  }
-
   & a {
     text-decoration: none;
     font-weight: 500;
@@ -95,6 +105,18 @@
 
     color: #ffffff;
   }
+
+  & a:hover {
+    color: #a87b62;
+  }
+}
+
+.page-footer__item svg {
+  fill: #ffffff;
+}
+
+.page-footer__item a:hover svg {
+  fill: #a87b62;
 }
 
 .page-footer__list--third {

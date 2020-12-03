@@ -23,12 +23,30 @@
     width: 180px;
     border: none;
     outline-color: #f6f5f4;
+    box-sizing: border-box;
   }
 
   & button {
     background-color: transparent;
     border: none;
+    outline: none;
   }
+}
+
+.page-header input[type="search"]:hover {
+  border-bottom: 1px solid #9b9997;
+}
+
+.page-header input[type="search"]:focus {
+  border-bottom: 1px solid #9b9997;
+}
+
+.page-header button:hover {
+  opacity: 0.6;
+}
+
+.page-header button:focus {
+  opacity: 0.3;
 }
 
 .page-header__head {
@@ -45,17 +63,38 @@
   margin-left: 24.817%;
   // margin-right: 31.698%;
   margin-right: auto;
+  cursor: auto;
+}
+
+.page-header__logo--inner {
+  cursor: pointer;
 }
 
 .page-header__login {
   width: 38px;
   margin-right: 35px;
   color: #1d1613;
+
+  &:hover {
+    color: #9b9997;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .page-header__cart {
   width: 49px;
   color: #1d1613;
+
+  &:hover {
+    color: #9b9997;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .page-header__cart svg {

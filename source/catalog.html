@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Jewellery</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="Печатные платы, компоненты для светотехники, электронные комплектующие">
+    <meta name="keywords" content="Печатные платы, светотехника">
+    <link href="css/style.min.css" rel="stylesheet">
+    <script src="js/picturefill.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
+    <!-- <link rel="preload" href="fonts/pt-mono-v8-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin> -->
+  </head>
+  <body>
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
+
+    <header class="page-header page-header--colored">
+      <div class="page-header__head">
+        <input class="visually-hidden" type="checkbox" name="toggle" id="toggle">
+        <label for="toggle" class="page-header__toggle"></label>
+
+        <form action="catalog.html">
+          <button type="submit" name="search">
+            <svg width="14" height="14" xml:space="preserve">
+              <use xlink:href="#search-icon"></use>
+            </svg>
+          </button>
+          <input type="search" placeholder="Type here to search">
+        </form>
+        <a href="index.html" class="page-header__logo page-header__logo--inner" aria-label="Перейти на главную страницу">
+          <svg width="66" height="66" xml:space="preserve">
+            <use xlink:href="#logo-icon"></use>
+          </svg>
+        </a>
+        <a href="#" class="page-header__login">Login</a>
+        <a href="#" class="page-header__cart">
+          <svg width="18" height="16" xml:space="preserve">
+            <use xlink:href="#cart-icon"></use>
+          </svg>
+          <span>Cart 0</span>
+        </a>
+      </div>
+      <nav class="page-header__navigation navigation navigation--opened">
+        <form action="catalog.html">
+          <button type="submit" name="search">
+            <svg width="16" height="16" xml:space="preserve">
+              <use xlink:href="#search-white-icon"></use>
+            </svg>
+          </button>
+          <input type="search">
+        </form>
+        <ul class="navigation__list">
+          <li class="navigation__item"><a href="#">What’s new</a></li>
+          <li class="navigation__item"><a href="#">Chokers</a></li>
+          <li class="navigation__item"><a href="#">Necklaces</a></li>
+          <li class="navigation__item"><a href="#">Rings</a></li>
+          <li class="navigation__item"><a href="#">Earrings</a></li>
+        </ul>
+        <ul class="navigation__tablet-list">
+          <li class="navigation__tablet-item"><a href="#">About CH</a></li>
+          <li class="navigation__tablet-item"><a href="#">Stores & Hours</a></li>
+          <li class="navigation__tablet-item"><a href="#">Contact Us</a></li>
+        </ul>
+        <a href="#" class="navigation__login">Login</a>
+      </nav>
+    </header>
+
+    <main>
+      <div class="intro intro--catalog">
+        <h1 class="intro__title">PERFECTION</h1>
+        <p class="intro__text">made to be yours</p>
+      </div>
+    </main>
+
+    <footer class="page-footer">
+      <div class="page-footer__container">
+        <section class="page-footer__mailing">
+          <h2 class="page-footer__title">The good stuff in your inbox</h2>
+          <p class="page-footer__text">News and updates from CH. No spam, we promise.</p>
+          <form class="page-footer__form" action="https://echo.htmlacademy.ru" method="post" name="mailing">
+            <input type="email" name="email" value="" placeholder="Your E-mail" required>
+            <button class="page-footer__btn" type="submit">Sign Up</button>
+          </form>
+        </section>
+
+        <ul class="page-footer__list page-footer__list--first">
+          <li class="page-footer__item"><a href="#">Ordering & Payment</a></li>
+          <li class="page-footer__item"><a href="#">Terms & Conditions</a></li>
+          <li class="page-footer__item"><a href="#">Returns & Exchanges</a></li>
+          <li class="page-footer__item"><a href="#">Delivery</a></li>
+        </ul>
+
+        <ul class="page-footer__list page-footer__list--second">
+          <li class="page-footer__item"><a href="#">About CH</a></li>
+          <li class="page-footer__item"><a href="#">Stores & Hours</a></li>
+          <li class="page-footer__item"><a href="#">Jobs</a></li>
+          <li class="page-footer__item"><a href="#">Contact Us</a></li>
+        </ul>
+
+        <ul class="page-footer__list page-footer__list--third">
+          <li class="page-footer__item page-footer__item--fb">
+            <a href="#">
+              <svg width="8" height="15" xml:space="preserve">
+                <use xlink:href="#fb-icon"></use>
+              </svg>
+              <span>Facebook</span>
+            </a>
+          </li>
+          <li class="page-footer__item page-footer__item--inst">
+            <a href="#">
+              <svg width="15" height="15" xml:space="preserve">
+                <use xlink:href="#inst-icon"></use>
+              </svg>
+              <span>Instagram</span>
+            </a>
+          </li>
+          <li class="page-footer__item page-footer__item--pin">
+            <a href="#">
+              <svg width="15" height="15" xml:space="preserve">
+                <use xlink:href="#pin-icon"></use>
+              </svg>
+              <span>Pinterest</span>
+            </a>
+          </li>
+          <li class="page-footer__item page-footer__item--tw">
+            <a href="#">
+              <svg width="15" height="13" xml:space="preserve">
+                <use xlink:href="#tw-icon"></use>
+              </svg>
+              <span>Twitter</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript">
+      $(document).ready(function(){
+        $('.slider__multiple-items').slick({
+          dots: true,
+          infinite: true,
+          speed: 300,
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          responsive: [
+            {
+              breakpoint: 1024,
+              settings: {
+                slidesToShow: 2,
+                slidesToScroll: 2,
+                infinite: true,
+                dots: true
+              }
+            }
+          ]
+        });
+
+      });
+    </script>
+  </body>
+</html>

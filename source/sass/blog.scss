@@ -29,6 +29,14 @@
   margin-bottom: 40px;
 
   border-bottom: 1px solid #a87b62;
+
+  &:hover {
+    color: #9b9997;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .blog__container {
@@ -84,6 +92,14 @@
   color: #1d1613;
   text-decoration: none;
   border-bottom: 1px solid #a87b62;
+
+  &:hover {
+    color: #9b9997;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
 }
 
 .blog__card--second {
