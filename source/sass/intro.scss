@@ -37,6 +37,11 @@
   color: #ffffff;
 }
 
+.intro__title--catalog {
+  font-size: 34px;
+  line-height: 44px;
+}
+
 .intro__text {
   margin: 0;
 
@@ -45,6 +50,11 @@
   font-size: 38px;
   line-height: 49px;
   color: #ffffff;
+}
+
+.intro__text--catalog {
+  font-size: 22px;
+  line-height: 29px;
 }
 
 @media (max-width: 1023px) {

@@ -48,6 +48,10 @@
   margin: 0;
 }
 
+.slider__item {
+  margin: 15px;
+}
+
 .slider__item a {
   display: block;
 }
@@ -92,10 +96,15 @@
 
 .slick-next {
   right: 0;
+
+  &::before {
+    left: 0;
+  }
 }
 
 .slick-prev {
   left: 0;
+
   &::before {
     transform: rotate(-180deg);
     left: 0;

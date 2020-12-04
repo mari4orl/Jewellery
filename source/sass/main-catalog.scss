@@ -1,0 +1,21 @@
+.main-catalog {
+  max-width: 1190px;
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  margin: 0 auto;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #ffffff;
+}
+
+@media (max-width: 1023px) {
+  .main-catalog {
+    max-width: 768px;
+    padding-top: 50px;
+    padding-bottom: 40px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}

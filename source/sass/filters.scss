@@ -1,0 +1,148 @@
+.filters {
+  display: flex;
+  flex-direction: column;
+  margin-right: 50px;
+  padding-left: 10px;
+  box-sizing: border-box;
+}
+
+.filters__block {
+  padding: 28px 25px;
+  border: 1px solid #a87b62;
+  border-bottom: none;
+  min-width: 250px;
+  box-sizing: border-box;
+}
+
+.filters__block--price {
+  border-bottom: 1px solid #a87b62;
+  margin-bottom: 35px;
+}
+
+.filters__title {
+  display: block;
+  font-weight: 500;
+  line-height: 21px;
+  color: #1d1613;
+  cursor: pointer;
+  position: relative;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    background-image: url("../img/acc.svg");
+    background-repeat: no-repeat;
+    width: 17px;
+    height: 10px;
+    right: 0;
+    top: 5px;
+  }
+}
+
+.filters input[type="checkbox"]:checked ~ .filters__title::after {
+  transform: rotate(180deg);
+}
+
+.filters__checkbox-item {
+  position: relative;
+  padding-left: 25px;
+}
+
+.filters__checkbox-label {
+  font-size: 14px;
+  line-height: 18px;
+  color: #1d1613;
+  cursor: pointer;
+  font-weight: 500;
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.filters__checkbox-indicator {
+  position: absolute;
+  width: 16px;
+  height: 15px;
+  top: 5px;
+  left: 0;
+
+  border: 1px solid #a87b62;
+  box-sizing: border-box;
+}
+
+.filters__checkbox:checked + .filters__checkbox-indicator {
+  background-color: #a87b62;
+}
+
+.filters__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.filters__list,
+.filters__range,
+.filters__price-controls {
+  display: none;
+  margin-top: 20px;
+}
+
+.nojs ~ .filters__list,
+.nojs ~ .filters__range,
+.nojs ~ .filters__price-controls {
+  display: block;
+}
+
+.filters input[id="Product"]:checked ~ .filters__list,
+.filters input[id="Material"]:checked ~ .filters__list,
+.filters input[id="Collection"]:checked ~ .filters__list,
+.filters input[id="Price"]:checked ~ .filters__range,
+.filters input[id="Price"]:checked ~ .filters__price-controls {
+  display: block;
+}
+
+.filters__submit,
+.filters__reset {
+  min-width: 250px;
+  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: 1px solid #a87b62;
+  box-sizing: border-box;
+  background-color: transparent;
+
+  font-weight: 500;
+  line-height: 21px;
+  color: #1d1613;
+}
+
+.filters__submit {
+  color: #ffffff;
+  background: #a87b62;
+  margin-bottom: 25px;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
+}
+
+.filters__reset {
+  &:hover {
+    color: #ffffff;
+    background: #a87b62;
+  }
+
+  &:focus {
+    opacity: 0.5;
+  }
+}

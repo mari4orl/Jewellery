@@ -72,8 +72,307 @@
 
     <main>
       <div class="intro intro--catalog">
-        <h1 class="intro__title">PERFECTION</h1>
-        <p class="intro__text">made to be yours</p>
+        <h1 class="intro__title intro__title--catalog">ALL JEWELLERY</h1>
+        <p class="intro__text intro__text--catalog">Discover picks of fashion's finest trends in our jewellery catalog</p>
+      </div>
+
+      <div class="main-catalog">
+        <form class="main-catalog__filters filters" action="https://echo.htmlacademy.ru" method="get">
+          <div class="filters__block">
+            <input class="visually-hidden acc nojs" type="checkbox" name="Product" id="Product">
+            <label for="Product" class="filters__title">Product</label>
+            <ul class="filters__list filters__product-list">
+              <li class="filters__checkbox-item">
+                <label class="filters__checkbox-label">
+                  <input class="filters__checkbox visually-hidden" type="checkbox" name="Necklaces">
+                  <span class="filters__checkbox-indicator"></span>
+                  Necklaces
+                </label>
+              </li>
+
+              <li class="filters__checkbox-item">
+                <label class="filters__checkbox-label">
+                  <input class="filters__checkbox visually-hidden" type="checkbox" name="Chokers">
+                  <span class="filters__checkbox-indicator"></span>
+                  Chokers
+                </label>
+              </li>
+
+              <li class="filters__checkbox-item">
+                <label class="filters__checkbox-label">
+                  <input class="filters__checkbox visually-hidden" type="checkbox" name="Rings">
+                  <span class="filters__checkbox-indicator"></span>
+                  Rings
+                </label>
+              </li>
+
+              <li class="filters__checkbox-item">
+                <label class="filters__checkbox-label">
+                  <input class="filters__checkbox visually-hidden" type="checkbox" name="Earrings">
+                  <span class="filters__checkbox-indicator"></span>
+                  Earrings
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filters__block">
+            <input class="visually-hidden acc nojs" type="checkbox" name="Material" id="Material">
+            <label for="Material" class="filters__title">Material</label>
+            <ul class="filters__list filters__material-list">
+              <li class="filters__checkbox-item">
+                <label class="filters__checkbox-label">
+                  <input class="filters__checkbox visually-hidden" type="checkbox" name="Gold ">
+                  <span class="filters__checkbox-indicator"></span>
+                  Gold
+                </label>
+              </li>
+
+              <li class="filters__checkbox-item">
+                <label class="filters__checkbox-label">
+                  <input class="filters__checkbox visually-hidden" type="checkbox" name="Silver">
+                  <span class="filters__checkbox-indicator"></span>
+                  Silver
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filters__block">
+            <input class="visually-hidden acc nojs" type="checkbox" name="Collection" id="Collection">
+            <label for="Collection" class="filters__title">Collection</label>
+            <ul class="filters__list filters__material-list">
+              <li class="filters__checkbox-item">
+                <label class="filters__checkbox-label">
+                  <input class="filters__checkbox visually-hidden" type="checkbox" name="Gold ">
+                  <span class="filters__checkbox-indicator"></span>
+                  Pink flamingo
+                </label>
+              </li>
+
+              <li class="filters__checkbox-item">
+                <label class="filters__checkbox-label">
+                  <input class="filters__checkbox visually-hidden" type="checkbox" name="Silver">
+                  <span class="filters__checkbox-indicator"></span>
+                  Dreams
+                </label>
+              </li>
+            </ul>
+          </div>
+
+          <div class="filters__block filters__block--price">
+            <input class="visually-hidden acc nojs" type="checkbox" name="Price" id="Price">
+            <label for="Price" class="filters__title">Price</label>
+            <div class="filters__price-controls">
+              <label class="filters__min-price">от <input type="number" name="min-price" value="$ 55"></label>
+              <label class="filters__max-price">до <input type="number" name="max-price" value="$ 155"></label>
+            </div>
+            <div class="filters__range">
+              <div class="scale"></div>
+              <button type="button" class="filters__range-toggle filters__range-toggle-min"></button>
+              <button type="button" class="filters__range-toggle filters__range-toggle-max"></button>
+            </div>
+          </div>
+
+          <button class="filters__submit" type="submit" name="submit">Apply</button>
+          <button class="filters__reset" type="reset" name="reset">Clear all</button>
+        </form>
+
+        <ul class="main-catalog__catalog catalog">
+          <li class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/double-pearl-earrings-desk@1x.webp 1x, img/double-pearl-earrings-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/double-pearl-earrings-tab@1x.webp 1x, img/double-pearl-earrings-tab@2x.webp 2x">
+              <source type="image/webp" srcset="img/double-pearl-earrings-mob@1x.webp 1x, img/double-pearl-earrings-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/double-pearl-earrings-desk@1x.jpg 1x, img/double-pearl-earrings-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/double-pearl-earrings-tab@1x.jpg 1x, img/double-pearl-earrings-tab@2x.jpg 2x">
+              <img class="slider__img" src="img/double-pearl-earrings-mob@1x.jpg" srcset="img/double-pearl-earrings-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+            </picture>
+            <a href="card.html">
+              <h3>Double pearl earrings</h3>
+            </a>
+            <span>$ 115</span>
+          </li>
+          <li class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/black-choker-gold-bead-desk@1x.webp 1x, img/black-choker-gold-bead-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/black-choker-gold-bead-tab@1x.webp 1x, img/black-choker-gold-bead-tab@2x.webp 2x">
+              <source type="image/webp" srcset="img/black-choker-gold-bead-mob@1x.webp 1x, img/black-choker-gold-bead-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/black-choker-gold-bead-desk@1x.jpg 1x, img/black-choker-gold-bead-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/black-choker-gold-bead-tab@1x.jpg 1x, img/black-choker-gold-bead-tab@2x.jpg 2x">
+              <img class="slider__img" src="img/black-choker-gold-bead-mob@1x.jpg" srcset="img/black-choker-gold-bead-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+            </picture>
+            <a href="card.html">
+              <h3>Choker with gold bead</h3>
+            </a>
+            <span>$ 55</span>
+          </li>
+          <li class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/gold-layered-necklace-desk@1x.webp 1x, img/gold-layered-necklace-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/gold-layered-necklace-tab@1x.webp 1x, img/gold-layered-necklace-tab@2x.webp 2x">
+              <source type="image/webp" srcset="img/gold-layered-necklace-mob@1x.webp 1x, img/gold-layered-necklace-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/gold-layered-necklace-desk@1x.jpg 1x, img/gold-layered-necklace-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/gold-layered-necklace-tab@1x.jpg 1x, img/gold-layered-necklace-tab@2x.jpg 2x">
+              <img class="slider__img" src="img/gold-layered-necklace-mob@1x.jpg" srcset="img/gold-layered-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+            </picture>
+            <a href="card.html">
+              <h3>Gold layered necklace</h3>
+            </a>
+            <span>$ 155</span>
+          </li>
+          <li class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/blue-gemstone-pendant-desk@1x.webp 1x, img/blue-gemstone-pendant-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/blue-gemstone-pendant-tab@1x.webp 1x, img/blue-gemstone-pendant-tab@2x.webp 2x">
+              <source type="image/webp" srcset="img/blue-gemstone-pendant-mob@1x.webp 1x, img/blue-gemstone-pendant-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/blue-gemstone-pendant-desk@1x.jpg 1x, img/blue-gemstone-pendant-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/blue-gemstone-pendant-tab@1x.jpg 1x, img/blue-gemstone-pendant-tab@2x.jpg 2x">
+              <img class="slider__img" src="img/blue-gemstone-pendant-mob@1x.jpg" srcset="img/blue-gemstone-pendant-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+            </picture>
+            <a href="card.html">
+              <h3>Blue gemstone pendant</h3>
+            </a>
+            <span>$ 105</span>
+          </li>
+          <li class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/boho-earrings-desk@1x.webp 1x, img/boho-earrings-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/boho-earrings-tab@1x.webp 1x, img/boho-earrings-tab@2x.webp 2x">
+              <source type="image/webp" srcset="img/boho-earrings-mob@1x.webp 1x, img/boho-earrings-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/boho-earrings-desk@1x.jpg 1x, img/boho-earrings-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/boho-earrings-tab@1x.jpg 1x, img/boho-earrings-tab@2x.jpg 2x">
+              <img class="slider__img" src="img/boho-earrings-mob@1x.jpg" srcset="img/boho-earrings-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+            </picture>
+            <a href="card.html">
+              <h3>Boho earrings</h3>
+            </a>
+            <span>$ 75</span>
+          </li>
+          <li class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/bird-necklace-desk@1x.webp 1x, img/bird-necklace-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/bird-necklace-tab@1x.webp 1x, img/bird-necklace-tab@2x.webp 2x">
+              <source type="image/webp" srcset="img/bird-necklace-mob@1x.webp 1x, img/bird-necklace-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/bird-necklace-desk@1x.jpg 1x, img/bird-necklace-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/bird-necklace-tab@1x.jpg 1x, img/bird-necklace-tab@2x.jpg 2x">
+              <img class="slider__img" src="img/bird-necklace-mob@1x.jpg" srcset="img/bird-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+            </picture>
+            <a href="card.html">
+              <h3>Gold bird necklace</h3>
+            </a>
+            <span>$ 135</span>
+          </li>
+          <li class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/black-leather-choker-necklace-desk@1x.webp 1x, img/black-leather-choker-necklace-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/black-leather-choker-necklace-tab@1x.webp 1x, img/black-leather-choker-necklace-tab@2x.webp 2x">
+              <source type="image/webp" srcset="img/black-leather-choker-necklace-mob@1x.webp 1x, img/black-leather-choker-necklace-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/black-leather-choker-necklace-desk@1x.jpg 1x, img/black-leather-choker-necklace-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/black-leather-choker-necklace-tab@1x.jpg 1x, img/black-leather-choker-necklace-tab@2x.jpg 2x">
+              <img class="slider__img" src="img/black-leather-choker-necklace-mob@1x.jpg" srcset="img/black-leather-choker-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+            </picture>
+            <a href="card.html">
+              <h3>Black leather choker</h3>
+            </a>
+            <span>$ 85</span>
+          </li>
+          <li class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/purple-gemstone-necklace-desktop@1x.webp 1x, img/purple-gemstone-necklace-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/purple-gemstone-necklace-tab@1x.webp 1x, img/purple-gemstone-necklace-tab@2x.webp 2x">
+              <source type="image/webp" srcset="img/purple-gemstone-necklace-mob@1x.webp 1x, img/purple-gemstone-necklace-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/purple-gemstone-necklace-desktop@1x.jpg 1x, img/purple-gemstone-necklace-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/purple-gemstone-necklace-tab@1x.jpg 1x, img/purple-gemstone-necklace-tab@2x.jpg 2x">
+              <img class="slider__img" src="img/purple-gemstone-necklace-mob@1x.jpg" srcset="img/purple-gemstone-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+            </picture>
+            <a href="card.html">
+              <h3>Necklace with amethyst</h3>
+            </a>
+            <span>$ 145</span>
+          </li>
+          <li class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/elephant-earrings-desk@1x.webp 1x, img/elephant-earrings-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/elephant-earrings-tab@1x.webp 1x, img/elephant-earrings-tab@2x.webp 2x">
+              <source type="image/webp" srcset="img/elephant-earrings-mob@1x.webp 1x, img/elephant-earrings-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/elephant-earrings-desk@1x.jpg 1x, img/elephant-earrings-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/elephant-earrings-tab@1x.jpg 1x, img/elephant-earrings-tab@2x.jpg 2x">
+              <img class="slider__img" src="img/elephant-earrings-mob@1x.jpg" srcset="img/elephant-earrings-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+            </picture>
+            <a href="card.html">
+              <h3>Elephant earrings</h3>
+            </a>
+            <span>$ 95</span>
+          </li>
+          <li class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/threader-necklace-closeup-desk@1x.webp 1x, img/threader-necklace-closeup-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/threader-necklace-closeup-tab@1x.webp 1x, img/threader-necklace-closeup-tab@2x.webp 2x">
+              <source type="image/webp" srcset="img/threader-necklace-closeup-mob@1x.webp 1x, img/threader-necklace-closeup-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/threader-necklace-closeup-desk@1x.jpg 1x, img/threader-necklace-closeup-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/threader-necklace-closeup-tab@1x.jpg 1x, img/threader-necklace-closeup-tab@2x.jpg 2x">
+              <img class="slider__img" src="img/threader-necklace-closeup-mob@1x.jpg" srcset="img/threader-necklace-closeup-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+            </picture>
+            <a href="card.html">
+              <h3>Threader necklace</h3>
+            </a>
+            <span>$ 115</span>
+          </li>
+          <li class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/origami-crane-necklace-desk@1x.webp 1x, img/origami-crane-necklace-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/origami-crane-necklace-tab@1x.webp 1x, img/origami-crane-necklace-tab@2x.webp 2x">
+              <source type="image/webp" srcset="img/origami-crane-necklace-mob@1x.webp 1x, img/origami-crane-necklace-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/origami-crane-necklace-desk@1x.jpg 1x, img/origami-crane-necklace-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/origami-crane-necklace-tab@1x.jpg 1x, img/origami-crane-necklace-tab@2x.jpg 2x">
+              <img class="slider__img" src="img/origami-crane-necklace-mob@1x.jpg" srcset="img/origami-crane-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+            </picture>
+            <a href="card.html">
+              <h3>Origami crane necklace</h3>
+            </a>
+            <span>$ 105</span>
+          </li>
+          <li class="catalog__item">
+            <picture>
+              <source type="image/webp" media="(min-width: 1024px)" srcset="img/marble-earrings-desk@1x.webp 1x, img/marble-earrings-desk@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/marble-earrings-tab@1x.webp 1x, img/marble-earrings-tab@2x.webp 2x">
+              <source type="image/webp" srcset="img/marble-earrings-mob@1x.webp 1x, img/marble-earrings-mob@2x.webp 2x">
+
+              <source media="(min-width: 1024px)" srcset="img/marble-earrings-desk@1x.jpg 1x, img/marble-earrings-desk@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/marble-earrings-tab@1x.jpg 1x, img/marble-earrings-tab@2x.jpg 2x">
+              <img class="slider__img" src="img/marble-earrings-mob@1x.jpg" srcset="img/marble-earrings-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+            </picture>
+            <a href="card.html">
+              <h3>Marble earrings</h3>
+            </a>
+            <span>$ 95</span>
+          </li>
+        </ul>
+      </div>
+      <div class="bottom">
+        <div class="bottom__container">
+          <span class="bottom__arrow">Previous</span>
+          <ul class="bottom__list">
+            <li class="bottom__item bottom__item--active">1</li>
+            <li class="bottom__item">2</li>
+            <li class="bottom__item">3</li>
+            <li class="bottom__item">4</li>
+            <li class="bottom__item">5</li>
+          </ul>
+          <span class="bottom__arrow">Next</span>
+        </div>
       </div>
     </main>
 
