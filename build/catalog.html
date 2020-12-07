@@ -77,6 +77,7 @@
       </div>
 
       <div class="main-catalog">
+        <button class="main-catalog__toggle">Filter</button>
         <form class="main-catalog__filters filters" action="https://echo.htmlacademy.ru" method="get">
           <div class="filters__block">
             <input class="visually-hidden acc nojs" type="checkbox" name="Product" id="Product">
@@ -163,14 +164,15 @@
           <div class="filters__block filters__block--price">
             <input class="visually-hidden acc nojs" type="checkbox" name="Price" id="Price">
             <label for="Price" class="filters__title">Price</label>
-            <div class="filters__price-controls">
-              <label class="filters__min-price">от <input type="number" name="min-price" value="$ 55"></label>
-              <label class="filters__max-price">до <input type="number" name="max-price" value="$ 155"></label>
-            </div>
             <div class="filters__range">
+              <div class="filters__scale"></div>
               <div class="scale"></div>
               <button type="button" class="filters__range-toggle filters__range-toggle-min"></button>
               <button type="button" class="filters__range-toggle filters__range-toggle-max"></button>
+            </div>
+            <div class="filters__price-controls">
+              <label class="filters__min-price">$ <input type="number" name="min-price" value="55"></label>
+              <label class="filters__max-price">$ <input type="number" name="max-price" value="155"></label>
             </div>
           </div>
 

@@ -6,8 +6,12 @@
   margin: 0 auto;
   box-sizing: border-box;
   display: flex;
-  flex-wrap: wrap;
+
   background-color: #ffffff;
+}
+
+.main-catalog__toggle {
+  display: none;
 }
 
 @media (max-width: 1023px) {
@@ -17,5 +21,31 @@
     padding-bottom: 40px;
     padding-left: 45px;
     padding-right: 45px;
+    flex-direction: column;
+  }
+
+  .main-catalog__toggle {
+    display: block;
+    max-width: 678px;
+    background: #a87b62;
+    border: 1px solid #a87b62;
+    box-sizing: border-box;
+    text-align: center;
+    text-decoration: none;
+    line-height: 21px;
+    color: #ffffff;
+    padding: 25px;
+  }
+
+  .main-catalog__toggle--none {
+    display: none;
+  }
+}
+
+@media (max-width: 767px) {
+  .main-catalog {
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 40px;
   }
 }

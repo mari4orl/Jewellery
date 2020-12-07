@@ -28,6 +28,7 @@
 .catalog__item h3 {
   font-weight: 500;
   line-height: 21px;
+  font-size: 16px;
   margin: 0;
   margin-top: 20px;
   margin-bottom: 10px;
@@ -38,4 +39,23 @@
   font-size: 14px;
   line-height: 18px;
   color: #1d1613;
+}
+
+@media (max-width: 1023px) {
+  .catalog {
+    margin: 0 auto;
+    margin-left: -30px;
+    margin-top: 10px;
+    padding: 0;
+  }
+
+  .catalog__item {
+    width: 206px;
+  }
+}
+
+@media (max-width: 767px) {
+  .catalog__item {
+    width: 130px;
+  }
 }

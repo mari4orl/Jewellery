@@ -6,6 +6,8 @@ var navigation = document.querySelector('.navigation');
 var toggle = document.querySelector('#toggle');
 var header = document.querySelector('.page-header');
 
+var filters = document.querySelector('.filters');
+var filtersToggle = document.querySelector('.main-catalog__toggle');
 //Главное меню
 
 navigation.classList.remove('navigation--opened');
@@ -34,3 +36,12 @@ for (var i = 0; i < accList.length; i++) {
     }
   });
 }
+
+//Фильтры
+
+filters.classList.remove('filters--nojs');
+
+filtersToggle.addEventListener('click', function() {
+  filters.classList.toggle('filters--opened');
+  filtersToggle.classList.toggle('main-catalog__toggle--none');
+});

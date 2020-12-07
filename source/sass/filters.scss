@@ -101,9 +101,12 @@
 .filters input[id="Product"]:checked ~ .filters__list,
 .filters input[id="Material"]:checked ~ .filters__list,
 .filters input[id="Collection"]:checked ~ .filters__list,
-.filters input[id="Price"]:checked ~ .filters__range,
-.filters input[id="Price"]:checked ~ .filters__price-controls {
+.filters input[id="Price"]:checked ~ .filters__range {
   display: block;
+}
+
+.filters input[id="Price"]:checked ~ .filters__price-controls {
+  display: flex;
 }
 
 .filters__submit,
@@ -145,4 +148,105 @@
   &:focus {
     opacity: 0.5;
   }
+}
+
+.filters__range {
+  position: relative;
+
+  margin-bottom: 17px;
+  margin-top: 32px;
+}
+
+.filters__scale {
+  position: relative;
+  height: 1px;
+
+  background: #F0EAE4;
+
+  &::after {
+    content: "";
+
+    height: 1px;
+    width: 45%;
+    background: #a87b62;
+
+    position: absolute;
+    left: 60px;
+  }
+}
+
+.filters__range-toggle {
+  position: absolute;
+  top: -7px;
+
+  width: 15px;
+  height: 15px;
+
+  background: #a87b62;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+
+  &:hover {
+    background: #9b9997;
+  }
+}
+
+.filters__range-toggle-min {
+  left: 45px;
+}
+
+.filters__range-toggle-max {
+  right: 35px;
+}
+
+
+.filters__min-price,
+.filters__max-price {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.filters__min-price {
+  padding-left: 37px;
+}
+
+.filters__max-price {
+  padding-left: 60px;
+}
+
+.filters__min-price input,
+.filters__max-price input {
+  width: 25px;
+  border: none;
+
+  font-weight: 500;
+  font-size: 14px;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type=number] {
+  -moz-appearance:textfield;
+}
+
+
+@media (max-width: 1023px) {
+  .filters {
+    display: none;
+  }
+
+  .filters--nojs {
+    display: block;
+  }
+
+  .filters--opened {
+    background-color: #ffffff;
+    display: block;
+  }
+
 }

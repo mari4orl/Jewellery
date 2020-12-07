@@ -49,3 +49,27 @@
     color: #9b9997;
   }
 }
+
+@media (max-width: 1023px) {
+  .bottom__container {
+    max-width: 768px;
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+}
+
+@media (max-width: 767px) {
+  .bottom {
+    border: none;
+    padding-top: 0;
+    padding-bottom: 70px;
+  }
+
+  .bottom__container {
+    justify-content: center;
+  }
+
+  .bottom__arrow {
+    display: none;
+  }
+}
