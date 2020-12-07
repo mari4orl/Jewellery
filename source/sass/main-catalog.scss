@@ -22,6 +22,7 @@
     padding-left: 45px;
     padding-right: 45px;
     flex-direction: column;
+    position: relative;
   }
 
   .main-catalog__toggle {
@@ -37,8 +38,25 @@
     padding: 25px;
   }
 
-  .main-catalog__toggle--none {
-    display: none;
+  input[name="filter-toggle"]:checked ~ .main-catalog__toggle {
+    position: absolute;
+    right: 150px;
+    top: 40px;
+
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: none;
+    padding: 0;
+
+    background-color: #1d1613;
+    background-image: url("../img/cross.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+
+    & span {
+        display: none;
+    }
   }
 }
 
@@ -47,5 +65,12 @@
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 40px;
+    max-width: 320px;
   }
+
+  input[name="filter-toggle"]:checked ~ .main-catalog__toggle {
+    right: 10px;
+    top: 25px;
+  }
+
 }

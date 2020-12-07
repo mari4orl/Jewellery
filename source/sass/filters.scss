@@ -75,7 +75,7 @@
   box-sizing: border-box;
 }
 
-.filters__checkbox:checked + .filters__checkbox-indicator {
+.filters__checkbox-item input[type="checkbox"]:checked + .filters__checkbox-indicator {
   background-color: #a87b62;
 }
 
@@ -111,7 +111,6 @@
 
 .filters__submit,
 .filters__reset {
-  min-width: 250px;
   padding-top: 25px;
   padding-bottom: 25px;
   padding-left: 10px;
@@ -238,6 +237,7 @@ input[type=number] {
 @media (max-width: 1023px) {
   .filters {
     display: none;
+    margin: 0;
   }
 
   .filters--nojs {
@@ -245,8 +245,104 @@ input[type=number] {
   }
 
   .filters--opened {
+    display: flex;
+
     background-color: #ffffff;
-    display: block;
+    box-shadow: 0px 5px 32px rgba(219, 213, 208, 0.24);
+    box-sizing: border-box;
+
+    width: 442px;
+    margin: 0 auto;
+    padding-left: 0;
+    padding-bottom: 40px;
   }
 
+  .filters__block {
+    border-left: none;
+    border-right: none;
+    padding: 40px;
+  }
+
+  .filters__block:first-child {
+    border-top: none;
+  }
+
+  .filters__scale {
+    width: 304px;
+
+    &::after {
+      width: 51.97%;
+    }
+  }
+
+  .filters__title:hover {
+    opacity: 1;
+  }
+
+  .filters__range-toggle-max {
+    right: 130px;
+  }
+
+  .filters__max-price {
+    padding-left: 125px;
+  }
+
+  .filters__submit,
+  .filters__reset {
+    max-width: 362px;
+    margin-right: 40px;
+    margin-left: 40px;
+
+    box-sizing: border-box;
+  }
+}
+
+@media (max-width: 767px) {
+  .filters--opened {
+    width: 270px;
+    padding-left: 0;
+    padding-bottom: 30px;
+  }
+
+  .filters__block {
+    padding-top: 28px;
+    padding-bottom: 28px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .filters__block--price {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .filters__submit,
+  .filters__reset {
+    margin-right: 20px;
+    margin-left: 20px;
+  }
+
+  .filters__scale {
+    width: 250px;
+
+    &::after {
+      width: 120px;
+    }
+  }
+
+  .filters__range-toggle-max {
+    right: 55px;
+  }
+
+  .filters__max-price {
+    padding-left: 95px;
+  }
+
+  label[for="Price"] {
+    padding-left: 10px;
+
+    &::after {
+      right: 12px;
+    }
+  }
 }

@@ -436,6 +436,29 @@
       </div>
     </footer>
 
+    <section class="login login--closed">
+      <div class="login__overlay"></div>
+      <div class="login__content">
+        <button type="button" class="login__close-btn">Закрыть</button>
+        <h2 class="login__title">Log In</h2>
+        <form action="https://echo.htmlacademy.ru" method="post" name="form" id="login-form">
+          <fieldset class="login__fieldset">
+            <legend class="visually-hidden">Войдите в свою учётную запись</legend>
+
+            <input type="email" value="" name="email" id="login-email" placeholder="Your E-mail" required>
+            <input type="password" placeholder="Password" required>
+            <a href="#" class="login__forgot">Forgot your password?</a>
+
+            <button class="login__btn" type="submit">Log In</button>
+            <div class="login__bottom">
+              <p class="login__text">Don’t have an account?</p>
+              <a href="#" class="login__singup">Sign up</a>
+            </div>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+
     <script src="js/main.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
@@ -457,18 +480,9 @@
                 infinite: true,
                 dots: true
               }
-            },
-            {
-              breakpoint: 768,
-              settings: {
-                slidesToShow: 2,
-                slidesToScroll: 2,
-                dots: false
-              }
             }
           ]
         });
-
       });
     </script>
   </body>

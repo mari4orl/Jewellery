@@ -123,6 +123,10 @@
     &::before {
       display: none;
     }
+
+    &::after {
+      display: none;
+    }
   }
 
   .page-header__head {

@@ -2,9 +2,8 @@
   display: flex;
   max-width: 1366px;
   padding-left: 98px;
-  padding-right: 198px;
+  padding-right: 10px;
   padding-top: 80px;
-  padding-bottom: 130px;
   margin: 0 auto;
   box-sizing: border-box;
 }
@@ -12,18 +11,23 @@
 .card__photos {
   display: flex;
   width: 600px;
-  margin-right: 9.35%;
+  margin-right: 7.95%;
 }
 
-.card__first-col {
+.card__photos .card__first-col {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   margin-right: 30px;
+  margin-top: -30px;
+}
+
+.card__img {
+  margin-top: 30px;
+  display: block;
 }
 
 .card__info {
-  width: 370px;
+  width: 29.41%;
 }
 
 .card__title {
@@ -45,7 +49,7 @@
 }
 
 .card__caption {
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 
 .card__description {
@@ -69,7 +73,7 @@
     border-bottom: 1px solid #f6f5f4;
     padding-bottom: 13px;
     padding-top: 13px;
-    display: block;
+    display: flex;
     width: 100%;
     display: flex;
     color: #1d1613;
@@ -105,12 +109,107 @@
 
 .card__bottom {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: -27px;
+  margin-bottom: -10px;
 
   & span {
     font-size: 14px;
     line-height: 18px;
     font-weight: 500;
     color: #9b9997;
+    margin-bottom: 10px;
+    margin-left: 27px;
+  }
+}
+
+@media (max-width: 1023px) {
+  .card {
+    max-width: 768px;
+    padding-left: 45px;
+    padding-right: 45px;
+    padding-top: 20px;
+  }
+
+  .card__photos {
+    flex-direction: column;
+    width: 319px;
+    margin-right: 5.9%;
+  }
+
+  .card__photos .card__first-col {
+    order: 1;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0;
+    margin-top: 14px;
+  }
+
+  .card__img {
+    margin: 0;
+  }
+
+  .card__info {
+    width: 319px;
+  }
+
+  .card__bottom {
+    margin-left: -24px;
+
+    & span {
+      margin-left: 24px;
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .card {
+    max-width: 320px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 0;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .card__photos {
+    margin: 0;
+    width: 100%;
+    margin-bottom: 50px;
+
+    & .card__first-col {
+      display: none;
+    }
+  }
+
+  .card__photos {
+    position: relative;
+
+    &::after {
+      content: "1 of 4";
+      position: absolute;
+      bottom: 10px;
+      left: 126px;
+      font-size: 14px;
+    }
+  }
+
+  .card__info {
+    width: 100%;
+  }
+
+  .card__bottom {
+    margin-right: 0;
+    margin-left: -56px;
+
+    & span {
+      text-align: center;
+      margin-right: 0;
+      margin-left: 56px;
+      max-width: 58px;
+    }
   }
 }

@@ -1,0 +1,212 @@
+.login--closed {
+  display: none;
+}
+
+.login__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+
+  z-index: 2;
+}
+
+.login-error {
+  animation: error 0.3s;
+}
+
+.login__content {
+  position: fixed;
+  top: 13.6%;
+  left: 50%;
+  transform: translate(-50%, 0);
+
+  width: 430px;
+  box-sizing: border-box;
+
+  background-color: #f0eae4;
+  background-image: url("../img/sweet-ice-cream-desk@1x.jpg");
+  background-repeat: no-repeat;
+  padding-top: 198px;
+  padding-left: 45px;
+  padding-right: 45px;
+  padding-bottom: 60px;
+  z-index: 3;
+}
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .login__content {
+    background-image: url("../img/sweet-ice-cream-desk@2x.jpg");
+    background-size: 430px 138px;
+  }
+}
+
+.login__close-btn {
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  font-size: 0;
+  background-color: transparent;
+  border: 0;
+  padding: 0;
+  right: 20px;
+  top: 20px;
+  cursor: pointer;
+  outline: none;
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #1d1613;
+    transform: rotate(45deg);
+    left: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background-color: #1d1613;
+    transform: rotate(-45deg);
+    left: 0;
+  }
+
+  &:hover {
+    opacity: 0.7;
+  }
+}
+
+.login__fieldset {
+  display: flex;
+  flex-direction: column;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+.login__title {
+  text-align: center;
+  line-height: 44px;
+  font-size: 34px;
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-family: "Cormorant Garamond", serif;
+}
+
+.login__fieldset input[type="email"],
+.login__fieldset input[type="password"] {
+  background: transparent;
+  border: 0;
+  border-bottom: 1px solid #1d1613;
+
+	-webkit-appearance: none;
+
+  padding-top: 9px;
+  padding-bottom: 9px;
+
+  box-sizing: border-box;
+
+  color: #9b9997;
+  outline: none;
+  line-height: 22px;
+
+  resize: none;
+  overflow: hidden;
+
+  &::placeholder {
+    color: #9b9997;
+  }
+
+  &:hover {
+    border-bottom: 1px solid #a87b62;
+  }
+
+  &:focus {
+    border-bottom: 1px solid #a87b62;
+
+  }
+}
+
+.login__fieldset input[type="email"] {
+  margin-bottom: 20px;
+}
+
+.login__fieldset input[type="password"] {
+  margin-bottom: 10px;
+}
+
+
+.login__forgot {
+  margin-left: auto;
+  font-size: 12px;
+  line-height: 18px;
+  color: #9b9997;
+  text-decoration: none;
+  margin-bottom: 45px;
+
+  &:hover {
+    color: #a87b62;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.login__btn {
+  background-color: #a87b62;
+  border: 1px solid #a87b62;
+  box-sizing: border-box;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+  color: #ffffff;
+  margin-bottom: 15px;
+  outline: none;
+
+  &:hover {
+    background-color: transparent;
+    color: #1d1613;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
+}
+
+.login__bottom {
+  display: flex;
+  margin: 0 auto;
+}
+
+.login__text {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 500;
+  color: #9b9997;
+  margin: 0;
+  margin-right: 5px;
+}
+
+.login__singup {
+  text-decoration: none;
+  font-size: 14px;
+  height: 21px;
+  color: #1d1613;
+  font-weight: 500;
+
+  &:hover {
+    color: #a87b62;
+  }
+
+  &:focus {
+    opacity: 0.7;
+  }
+}
