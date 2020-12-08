@@ -5,8 +5,8 @@
   margin: 0 auto;
   padding-left: 83px;
   padding-right: 83px;
-  padding-top: 130px;
-  padding-bottom: 130px;
+  padding-top: 120px;
+  padding-bottom: 113px;
   position: relative;
 
   display: flex;
@@ -18,7 +18,7 @@
   line-height: 44px;
   font-size: 34px;
   margin: 0;
-  margin-bottom: 30px;
+  margin-bottom: 24px;
 
   font-family: "Cormorant Garamond", serif;
 }
@@ -30,7 +30,7 @@
   color: #1d1613;
   text-decoration: none;
 
-  margin-bottom: 40px;
+  margin-bottom: 58px;
 
   border-bottom: 1px solid #a87b62;
 
@@ -62,7 +62,7 @@
   font-size: 0;
   line-height: 0;
   position: absolute;
-  top: -70px;
+  top: -100px;
   display: block;
   width: 29px;
   height: 9px;
@@ -118,6 +118,7 @@
   font-size: 16px;
   line-height: 21px;
   color: #1d1613;
+  margin-top: 23px;
 }
 
 .slider__title-link h3 {
@@ -125,8 +126,7 @@
   font-size: 16px;
   line-height: 21px;
   margin: 0;
-  margin-top: 25px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
 
   &:hover {
     color: #9b9997;
@@ -138,7 +138,6 @@
 }
 
 .slick-slide {
-  // margin-right: 30px;
   margin: 0;
 }
 
@@ -157,7 +156,8 @@
   list-style: none;
 
   padding: 0;
-  margin-top: 60px;
+  margin-top: 48px;
+  margin-left: -13px;
 
   & button {
     background-color: transparent;
@@ -167,10 +167,10 @@
     font-size: 16px;
     line-height: 21px;
     color: #9b9997;
-
-    margin-right: 15px;
-
     outline: none;
+
+    padding: 0;
+    margin-left: 13px;
   }
 }
 

@@ -33,12 +33,15 @@
     border: none;
     outline-color: #f6f5f4;
     box-sizing: border-box;
+    padding: 0;
+    padding-left: 11px;
   }
 
   & button {
     background-color: transparent;
     border: none;
     outline: none;
+    padding: 0;
   }
 }
 
@@ -48,6 +51,10 @@
 
 .page-header input[type="search"]:focus {
   border-bottom: 1px solid #9b9997;
+}
+
+.page-header input[type="search"]::placeholder {
+  font-size: 14px;
 }
 
 .page-header button:hover {
@@ -61,16 +68,19 @@
 .page-header__head {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 41px 98px 19px;
+  padding: 41px 98px 10px;
   box-sizing: border-box;
 
   display: flex;
-  align-items: center;
+  align-items: flex-start;
+
+  & form {
+    padding-top: 10px;
+  }
 }
 
 .page-header__logo {
-  margin-left: 24.817%;
-  // margin-right: 31.698%;
+  margin-left: 30.2%;
   margin-right: auto;
   cursor: auto;
 }
@@ -89,8 +99,9 @@
 
 .page-header__login {
   width: 38px;
-  margin-right: 35px;
+  margin-right: 33px;
   color: #1d1613;
+  margin-top: 12px;
 
   &:hover {
     color: #9b9997;
@@ -104,6 +115,9 @@
 .page-header__cart {
   width: 49px;
   color: #1d1613;
+  margin-top: 12px;
+  text-align: right;
+  letter-spacing: 0.7px;
 
   &:hover {
     color: #9b9997;
@@ -179,6 +193,7 @@
 
     & svg {
       display: block;
+      fill: white;
     }
   }
 }

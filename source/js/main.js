@@ -50,7 +50,7 @@ if (filters) {
 }
 
 
-//модальное окно
+//логин
 
 var ESC_KEYCODE = 27
 var loginElem = document.querySelector('.login');
@@ -59,7 +59,6 @@ var openNavDtn = document.querySelector('.navigation__login');
 
 var overlayElem = document.querySelector('.login__overlay');
 var closeBtn = document.querySelector('.login__close-btn');
-
 
 function onEscKeyDown(e) {
   if(e.keyCode === ESC_KEYCODE) {
@@ -124,3 +123,44 @@ if (openBtn || openNavDtn) {
 
 closeBtn.addEventListener('click', closelogin);
 overlayElem.addEventListener('click', closelogin);
+
+//модальное окно
+
+var modalElem = document.querySelector('.modal');
+var add = document.querySelector('.card__add');
+
+var overlayElemModal = document.querySelector('.modal__overlay');
+var closeCard = document.querySelector('.modal__close-btn');
+
+if (modalElem) {
+  function onEscKeyDown(e) {
+    if(e.keyCode === ESC_KEYCODE) {
+      document.body.classList.remove('stop-scrolling');
+      modalElem.classList.add('modal--closed');
+    }
+  }
+
+  function openModal() {
+    if (modalElem.classList.contains('modal--closed')) {
+      document.body.classList.add('stop-scrolling');
+      modalElem.classList.remove('modal--closed');
+      document.addEventListener('keydown', onEscKeyDown)
+    }
+  }
+
+  function closeModal() {
+    if (!modalElem.classList.contains('modal--closed')) {
+      document.body.classList.remove('stop-scrolling');
+      modalElem.classList.add('modal--closed');
+      document.removeEventListener('keydown', onEscKeyDown)
+    }
+  }
+
+  add.addEventListener('click', function(evt) {
+    evt.preventDefault();
+    openModal();
+  });
+
+  closeCard.addEventListener('click', closeModal);
+  overlayElemModal.addEventListener('click', closeModal);
+}

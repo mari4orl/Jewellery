@@ -6,7 +6,7 @@
 .page-footer__container {
   max-width: 1366px;
   margin: 0 auto;
-  padding: 100px 98px;
+  padding: 90px 98px;
   padding-bottom: 80px;
   box-sizing: border-box;
 
@@ -16,7 +16,7 @@
 }
 
 .page-footer__mailing {
-  width: 36.6%;
+  width: 42.8%;
   margin-bottom: 30px;
 }
 
@@ -25,12 +25,14 @@
   font-size: 34px;
   line-height: 44px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 8px;
   letter-spacing: 0.03em;
 }
 
 .page-footer__text {
   color: #9b9997;
+  margin: 0;
+  margin-bottom: 40px;
 }
 
 .page-footer__form {
@@ -92,17 +94,21 @@
 .page-footer__list {
   list-style: none;
   padding: 0;
+  padding-top: 5px;
   margin: 0;
 }
 
+.page-footer__list--third {
+  min-width: 115px;
+}
+
 .page-footer__item {
-  margin-bottom: 20px;
+  margin-bottom: 18px;
 
   & a {
     text-decoration: none;
     font-weight: 500;
     line-height: 21px;
-
     color: #ffffff;
   }
 
@@ -117,10 +123,6 @@
 
 .page-footer__item a:hover svg {
   fill: #a87b62;
-}
-
-.page-footer__list--third {
-  min-width: 115px;
 }
 
 .page-footer__item svg {

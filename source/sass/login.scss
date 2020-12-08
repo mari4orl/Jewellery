@@ -11,6 +11,7 @@
   background-color: rgba(0, 0, 0, 0.5);
 
   z-index: 2;
+  cursor: pointer;
 }
 
 .login-error {
@@ -208,5 +209,47 @@
 
   &:focus {
     opacity: 0.7;
+  }
+}
+
+@media (max-width: 1023px) {
+  .login__content {
+    width: 442px;
+
+    background-image: url("../img/sweet-ice-cream-tab@1x.jpg");
+    padding-left: 51px;
+    padding-right: 51px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .login__content {
+      background-image: url("../img/sweet-ice-cream-tab@2x.jpg");
+      background-size: 442px 138px;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .login__content {
+    width: 270px;
+
+    background-image: url("../img/sweet-ice-cream-mob@1x.jpg");
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 129px;
+    padding-bottom: 43px;
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .login__content {
+      background-image: url("../img/sweet-ice-cream-mob@2x.jpg");
+      background-size: 270px 84px;
+    }
+  }
+
+  .login__title {
+    text-align: center;
+    line-height: 31px;
+    font-size: 24px;
   }
 }
