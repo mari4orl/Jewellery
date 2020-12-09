@@ -151,7 +151,16 @@
     max-width: 768px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-bottom: 30px;
+    padding-bottom: 19px;
+  }
+
+  .blog__title {
+    margin-bottom: 20px;
+  }
+
+  .blog__link {
+    padding-bottom: 3px;
+    margin-bottom: 60px;
   }
 
   .blog__container {
@@ -183,13 +192,32 @@
 
     & .blog__article {
       height: 300px;
-      padding-top: 88px;
-      padding-bottom: 88px;
+      padding-top: 80px;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .blog__card--first {
+      background-image: url("../img/blog-care-tab@2x.jpg");
+      background-size: 339px 300px;
+    }
+
+    .blog__card--second {
+      background-image: url("../img/blog-power-tab@2x.jpg");
+      background-size: 339px 300px;
+    }
+
+    .blog__card--third {
+      background-image: url("../img/blog-trends-tab@2x.jpg");
+      background-size: 339px 300px;
     }
   }
 
   .blog__article {
+    padding-top: 64px;
     width: 339px;
+    padding-left: 88px;
+    padding-right: 88px;
   }
 }
 
@@ -198,7 +226,11 @@
     max-width: 320px;
     padding-left: 15px;
     padding-right: 15px;
-    padding-bottom: 40px;
+    padding-bottom: 20px;
+  }
+
+  .blog__link {
+    margin-bottom: 50px;
   }
 
   .blog__card {
@@ -212,8 +244,10 @@
     margin-top: auto;
     width: 290px;
     min-height: 256px;
-    padding-top: 49px;
+    padding-top: 43px;
     padding-bottom: 49px;
+    padding-left: 63px;
+    padding-right: 63px;
   }
 
   .blog__card--first {
@@ -233,8 +267,25 @@
 
     & .blog__article {
       height: 256px;
-      padding-top: 66px;
-      padding-bottom: 66px;
+      padding-top: 59px;
+      padding-bottom: 49px;
+    }
+  }
+
+  @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+    .blog__card--first {
+      background-image: url("../img/blog-care-mob@2x.jpg");
+      background-size: 290px 256px;
+    }
+
+    .blog__card--second {
+      background-image: url("../img/blog-power-mob@2x.jpg");
+      background-size: 290px 256px;
+    }
+
+    .blog__card--third {
+      background-image: url("../img/blog-trends-mob@2x.jpg");
+      background-size: 290px 256px;
     }
   }
 }

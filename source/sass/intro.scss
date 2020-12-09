@@ -41,6 +41,7 @@
 }
 
 .intro__title--catalog {
+  margin-top: 10px;
   font-size: 34px;
   line-height: 44px;
   letter-spacing: normal;
@@ -80,17 +81,62 @@
       background-image: url("../img/intro-catalog-tab@2x.jpg");
     }
   }
+
+  .intro__title {
+    margin-left: -15px;
+  }
+
+  .intro__title--catalog {
+    margin-left: 0;
+    margin-top: 5px;
+    margin-bottom: 3px;
+  }
+
+  .intro__text {
+    margin-left: -16px;
+  }
+
+  .intro__text--catalog {
+    margin-left: 0;
+  }
 }
 
 @media (max-width: 767px) {
   .intro {
     background-image: url("../img/intro-mob.jpg");
-    padding-left: 36px;
-    padding-right: 36px;
+    padding-left: 40px;
+    padding-right: 40px;
   }
 
   .intro--catalog {
     background-image: url("../img/intro-catalog-mob@1x.jpg");
+    padding-left: 36px;
+    padding-right: 36px;
+  }
+
+  .intro__title {
+    font-size: 38px;
+    line-height: 38px;
+    padding-top: 5px;
+    margin: 0 auto;
+  }
+
+  .intro__title--catalog {
+    font-size: 34px;
+    line-height: 34px;
+    padding: 0;
+  }
+
+  .intro__text {
+    font-size: 34px;
+    line-height: 44px;
+    margin: 0 auto;
+  }
+
+  .intro__text--catalog {
+    font-size: 22px;
+    line-height: 26px;
+    margin-top: 9px;
   }
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {

@@ -1,7 +1,7 @@
 .main-catalog {
   max-width: 1190px;
   padding-top: 80px;
-  padding-bottom: 80px;
+  padding-bottom: 27px;
 
   margin: 0 auto;
   box-sizing: border-box;
@@ -18,7 +18,7 @@
   .main-catalog {
     max-width: 768px;
     padding-top: 50px;
-    padding-bottom: 40px;
+    padding-bottom: 0px;
     padding-left: 45px;
     padding-right: 45px;
     flex-direction: column;
@@ -35,7 +35,9 @@
     text-decoration: none;
     line-height: 21px;
     color: #ffffff;
-    padding: 25px;
+
+    padding-top: 23px;
+    padding-bottom: 22px;
   }
 
   input[name="filter-toggle"]:checked ~ .main-catalog__toggle {

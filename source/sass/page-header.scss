@@ -5,7 +5,7 @@
   &::before {
     content: "";
     position: absolute;
-    bottom: 71px;
+    bottom: 61px;
     width: 100%;
     height: 1px;
     background-color: #f6f5f4;
@@ -145,6 +145,7 @@
 
   .page-header__head {
     padding: 30px 45px;
+    padding-bottom: 25px;
     max-width: 768px;
 
     & form {
@@ -164,6 +165,10 @@
     stroke: #ffffff;
   }
 
+  .page-header input[type="checkbox"]:checked ~ .page-header__cart svg {
+    stroke: #ffffff;
+  }
+
   .page-header__toggle {
     cursor: pointer;
     display: block;
@@ -172,12 +177,13 @@
     background-image: url("../img/toggle.svg");
     background-position: center;
     background-repeat: no-repeat;
+    margin-top: 25px;
   }
 
   .page-header__logo {
     margin: 0;
     margin-right: auto;
-    margin-left: auto;
+    margin-left: 41.5%;
   }
 
   .page-header__login {
@@ -186,6 +192,7 @@
 
   .page-header__cart {
     width: auto;
+    margin-top: 25px;
 
     & span {
     display: none;
@@ -193,7 +200,8 @@
 
     & svg {
       display: block;
-      fill: white;
+      fill: transparent;
+      stroke: #1D1613;
     }
   }
 }
@@ -201,6 +209,24 @@
 @media (max-width: 767px) {
   .page-header__head {
     padding: 20px 15px;
+    padding-bottom: 15px;
     max-width: 320px;
+  }
+
+  .page-header__toggle {
+    margin-top: 18px;
+  }
+
+  .page-header__logo {
+    margin-left: 32%;
+
+    & svg {
+      width: 52px;
+      height: 52px;
+    }
+  }
+
+  .page-header__cart {
+    margin-top: 17px;
   }
 }

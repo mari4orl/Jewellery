@@ -10,9 +10,13 @@
     <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.min.js"></script>
     <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
-    <!-- <link rel="preload" href="fonts/pt-mono-v8-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-700.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/roboto-condensed-v19-latin_cyrillic-regular.woff2" as="font" type="font/woff2" crossorigin> -->
+    <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/CormorantGaramond-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
     <div style="display:none">
@@ -22,7 +26,7 @@
     <header class="page-header page-header--colored">
       <div class="page-header__head">
         <input class="visually-hidden" type="checkbox" name="toggle" id="toggle">
-        <label for="toggle" class="page-header__toggle"></label>
+        <label for="toggle" class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></label>
 
         <form action="catalog.html">
           <button type="submit" name="search">
@@ -33,6 +37,10 @@
           <input type="search" placeholder="Type here to search">
         </form>
         <a href="#" class="page-header__logo">
+          <!-- <picture>
+            <source media="(min-width: 768px)" srcset="img/logo.svg">
+            <img src="img/logo-mob.svg" alt="Логотип CH">
+          </picture> -->
           <svg width="66" height="66" xml:space="preserve">
             <use xlink:href="#logo-icon"></use>
           </svg>
@@ -92,8 +100,6 @@
                 <source media="(min-width: 768px)" srcset="img/purple-gemstone-necklace-tab@1x.jpg 1x, img/purple-gemstone-necklace-tab@2x.jpg 2x">
                 <img class="slider__img" src="img/purple-gemstone-necklace-mob@1x.jpg" srcset="img/purple-gemstone-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
               </picture>
-            </a>
-            <a href="card.html" class="slider__title-link">
   					  <h3>Necklace with amethyst</h3>
             </a>
             <p>$ 145</p>
@@ -107,10 +113,8 @@
 
                 <source media="(min-width: 1024px)" srcset="img/layered-choker-necklace-desktop@1x.jpg 1x, img/layered-choker-necklace-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/layered-choker-necklace-tab@1x.jpg 1x, img/layered-choker-necklace-tab@2x.jpg 2x">
-                <img class="slider__img" src="img/layered-choker-necklace-mob@1x.jpg" srcset="img/layered-choker-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+                <img class="slider__img" src="img/layered-choker-necklace-mob@1x.jpg" srcset="img/layered-choker-necklace-mob@2x.jpg 2x" alt="Чокер">
               </picture>
-            </a>
-            <a href="card.html" class="slider__title-link">
   					  <h3>Layered сhoker</h3>
             </a>
             <p>$ 115</p>
@@ -124,10 +128,9 @@
 
                 <source media="(min-width: 1024px)" srcset="img/dainty-gold-necklace-desktop@1x.jpg 1x, img/dainty-gold-necklace-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/dainty-gold-necklace-tab@1x.jpg 1x, img/dainty-gold-necklace-tab@2x.jpg 2x">
-                <img class="slider__img" src="img/dainty-gold-necklace-mob@1x.jpg" srcset="img/dainty-gold-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+                <img class="slider__img" src="img/dainty-gold-necklace-mob@1x.jpg" srcset="img/dainty-gold-necklace-mob@2x.jpg 2x" alt="Золотое ожерелье">
               </picture>
-            </a>
-            <a href="card.html" class="slider__title-link">
+
   					  <h3>Gold chain</h3>
             </a>
             <p>$ 215</p>
@@ -141,10 +144,9 @@
 
                 <source media="(min-width: 1024px)" srcset="img/galaxy-earrings-desktop@1x.jpg 1x, img/galaxy-earrings-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/galaxy-earrings-tab@1x.jpg 1x, img/galaxy-earrings-tab@2x.jpg 2x">
-                <img class="slider__img" src="img/galaxy-earrings-mob@1x.jpg" srcset="img/galaxy-earrings-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+                <img class="slider__img" src="img/galaxy-earrings-mob@1x.jpg" srcset="img/galaxy-earrings-mob@2x.jpg 2x" alt="Серьги космические">
               </picture>
-            </a>
-            <a href="card.html" class="slider__title-link">
+
   					  <h3>Galaxy earrings</h3>
             </a>
             <p>$ 145</p>
@@ -161,13 +163,12 @@
                 <source media="(min-width: 768px)" srcset="img/purple-gemstone-necklace-tab@1x.jpg 1x, img/purple-gemstone-necklace-tab@2x.jpg 2x">
                 <img class="slider__img" src="img/purple-gemstone-necklace-mob@1x.jpg" srcset="img/purple-gemstone-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
               </picture>
-            </a>
-            <a href="card.html" class="slider__title-link">
-  					  <h3>Necklace with amethyst</h3>
+
+              <h3>Necklace with amethyst</h3>
             </a>
             <p>$ 145</p>
-  				</li>
-  				<li class="slider__item">
+          </li>
+          <li class="slider__item">
             <a class="slider__img-link" href="card.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/layered-choker-necklace-desktop@1x.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
@@ -176,15 +177,14 @@
 
                 <source media="(min-width: 1024px)" srcset="img/layered-choker-necklace-desktop@1x.jpg 1x, img/layered-choker-necklace-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/layered-choker-necklace-tab@1x.jpg 1x, img/layered-choker-necklace-tab@2x.jpg 2x">
-                <img class="slider__img" src="img/layered-choker-necklace-mob@1x.jpg" srcset="img/layered-choker-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+                <img class="slider__img" src="img/layered-choker-necklace-mob@1x.jpg" srcset="img/layered-choker-necklace-mob@2x.jpg 2x" alt="Чокер">
               </picture>
-            </a>
-            <a href="card.html" class="slider__title-link">
-  					  <h3>Layered сhoker</h3>
+
+              <h3>Layered сhoker</h3>
             </a>
             <p>$ 115</p>
-  				</li>
-  				<li class="slider__item">
+          </li>
+          <li class="slider__item">
             <a class="slider__img-link" href="card.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/dainty-gold-necklace-desktop@1x.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
@@ -193,15 +193,14 @@
 
                 <source media="(min-width: 1024px)" srcset="img/dainty-gold-necklace-desktop@1x.jpg 1x, img/dainty-gold-necklace-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/dainty-gold-necklace-tab@1x.jpg 1x, img/dainty-gold-necklace-tab@2x.jpg 2x">
-                <img class="slider__img" src="img/dainty-gold-necklace-mob@1x.jpg" srcset="img/dainty-gold-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+                <img class="slider__img" src="img/dainty-gold-necklace-mob@1x.jpg" srcset="img/dainty-gold-necklace-mob@2x.jpg 2x" alt="Золотое ожерелье">
               </picture>
-            </a>
-            <a href="card.html" class="slider__title-link">
-  					  <h3>Gold chain</h3>
+
+              <h3>Gold chain</h3>
             </a>
             <p>$ 215</p>
-  				</li>
-  				<li class="slider__item">
+          </li>
+          <li class="slider__item">
             <a class="slider__img-link" href="card.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/galaxy-earrings-desktop@1x.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
@@ -210,14 +209,13 @@
 
                 <source media="(min-width: 1024px)" srcset="img/galaxy-earrings-desktop@1x.jpg 1x, img/galaxy-earrings-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/galaxy-earrings-tab@1x.jpg 1x, img/galaxy-earrings-tab@2x.jpg 2x">
-                <img class="slider__img" src="img/galaxy-earrings-mob@1x.jpg" srcset="img/galaxy-earrings-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+                <img class="slider__img" src="img/galaxy-earrings-mob@1x.jpg" srcset="img/galaxy-earrings-mob@2x.jpg 2x" alt="Серьги космические">
               </picture>
-            </a>
-            <a href="card.html" class="slider__title-link">
-  					  <h3>Galaxy earrings</h3>
+
+              <h3>Galaxy earrings</h3>
             </a>
             <p>$ 145</p>
-  				</li>
+          </li>
 
           <li class="slider__item">
             <a class="slider__img-link" href="card.html">
@@ -230,13 +228,12 @@
                 <source media="(min-width: 768px)" srcset="img/purple-gemstone-necklace-tab@1x.jpg 1x, img/purple-gemstone-necklace-tab@2x.jpg 2x">
                 <img class="slider__img" src="img/purple-gemstone-necklace-mob@1x.jpg" srcset="img/purple-gemstone-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
               </picture>
-            </a>
-            <a href="card.html" class="slider__title-link">
-  					  <h3>Necklace with amethyst</h3>
+
+              <h3>Necklace with amethyst</h3>
             </a>
             <p>$ 145</p>
-  				</li>
-  				<li class="slider__item">
+          </li>
+          <li class="slider__item">
             <a class="slider__img-link" href="card.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/layered-choker-necklace-desktop@1x.webp 1x, img/layered-choker-necklace-desktop@2x.webp 2x">
@@ -245,15 +242,14 @@
 
                 <source media="(min-width: 1024px)" srcset="img/layered-choker-necklace-desktop@1x.jpg 1x, img/layered-choker-necklace-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/layered-choker-necklace-tab@1x.jpg 1x, img/layered-choker-necklace-tab@2x.jpg 2x">
-                <img class="slider__img" src="img/layered-choker-necklace-mob@1x.jpg" srcset="img/layered-choker-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+                <img class="slider__img" src="img/layered-choker-necklace-mob@1x.jpg" srcset="img/layered-choker-necklace-mob@2x.jpg 2x" alt="Чокер">
               </picture>
-            </a>
-            <a href="card.html" class="slider__title-link">
-  					  <h3>Layered сhoker</h3>
+
+              <h3>Layered сhoker</h3>
             </a>
             <p>$ 115</p>
-  				</li>
-  				<li class="slider__item">
+          </li>
+          <li class="slider__item">
             <a class="slider__img-link" href="card.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/dainty-gold-necklace-desktop@1x.webp 1x, img/dainty-gold-necklace-desktop@2x.webp 2x">
@@ -262,15 +258,14 @@
 
                 <source media="(min-width: 1024px)" srcset="img/dainty-gold-necklace-desktop@1x.jpg 1x, img/dainty-gold-necklace-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/dainty-gold-necklace-tab@1x.jpg 1x, img/dainty-gold-necklace-tab@2x.jpg 2x">
-                <img class="slider__img" src="img/dainty-gold-necklace-mob@1x.jpg" srcset="img/dainty-gold-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+                <img class="slider__img" src="img/dainty-gold-necklace-mob@1x.jpg" srcset="img/dainty-gold-necklace-mob@2x.jpg 2x" alt="Золотое ожерелье">
               </picture>
-            </a>
-            <a href="card.html" class="slider__title-link">
-  					  <h3>Gold chain</h3>
+
+              <h3>Gold chain</h3>
             </a>
             <p>$ 215</p>
-  				</li>
-  				<li class="slider__item">
+          </li>
+          <li class="slider__item">
             <a class="slider__img-link" href="card.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/galaxy-earrings-desktop@1x.webp 1x, img/galaxy-earrings-desktop@2x.webp 2x">
@@ -279,14 +274,13 @@
 
                 <source media="(min-width: 1024px)" srcset="img/galaxy-earrings-desktop@1x.jpg 1x, img/galaxy-earrings-desktop@2x.jpg 2x">
                 <source media="(min-width: 768px)" srcset="img/galaxy-earrings-tab@1x.jpg 1x, img/galaxy-earrings-tab@2x.jpg 2x">
-                <img class="slider__img" src="img/galaxy-earrings-mob@1x.jpg" srcset="img/galaxy-earrings-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
+                <img class="slider__img" src="img/galaxy-earrings-mob@1x.jpg" srcset="img/galaxy-earrings-mob@2x.jpg 2x" alt="Серьги космические">
               </picture>
-            </a>
-            <a href="card.html" class="slider__title-link">
-  					  <h3>Galaxy earrings</h3>
+
+              <h3>Galaxy earrings</h3>
             </a>
             <p>$ 145</p>
-  				</li>
+          </li>
 
   			</ul>
       </section>
@@ -380,7 +374,7 @@
           <h2 class="page-footer__title">The good stuff in your inbox</h2>
           <p class="page-footer__text">News and updates from CH. No spam, we promise.</p>
           <form class="page-footer__form" action="https://echo.htmlacademy.ru" method="post" name="mailing">
-            <input type="email" name="email" value="" placeholder="Your E-mail" required>
+            <input type="email" name="email" placeholder="Your E-mail" aria-label="Зарегестрироваться" required>
             <button class="page-footer__btn" type="submit">Sign Up</button>
           </form>
         </section>
@@ -405,6 +399,10 @@
               <svg width="8" height="15" xml:space="preserve">
                 <use xlink:href="#fb-icon"></use>
               </svg>
+              <!-- <picture>
+                <source media="(min-width: 768px)" srcset="img/fb-icon.svg">
+                <img src="img/fb-mob.svg" alt="Логотип CH">
+              </picture> -->
               <span>Facebook</span>
             </a>
           </li>
@@ -413,6 +411,10 @@
               <svg width="15" height="15" xml:space="preserve">
                 <use xlink:href="#inst-icon"></use>
               </svg>
+              <!-- <picture>
+                <source media="(min-width: 768px)" srcset="img/inst-icon.svg">
+                <img src="img/inst-mob.svg" alt="Логотип CH">
+              </picture> -->
               <span>Instagram</span>
             </a>
           </li>
@@ -421,6 +423,10 @@
               <svg width="15" height="15" xml:space="preserve">
                 <use xlink:href="#pin-icon"></use>
               </svg>
+              <!-- <picture>
+                <source media="(min-width: 768px)" srcset="img/pin-icon.svg">
+                <img src="img/pin-mob.svg" alt="Логотип CH">
+              </picture> -->
               <span>Pinterest</span>
             </a>
           </li>
@@ -429,6 +435,10 @@
               <svg width="15" height="13" xml:space="preserve">
                 <use xlink:href="#tw-icon"></use>
               </svg>
+              <!-- <picture>
+                <source media="(min-width: 768px)" srcset="img/tw-icon.svg">
+                <img src="img/tw-mob.svg" alt="Логотип CH">
+              </picture> -->
               <span>Twitter</span>
             </a>
           </li>
@@ -459,10 +469,10 @@
       </div>
     </section>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
     <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-    <script type="text/javascript" src="slick/slick.js"></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
         $('.slider__multiple-items').slick({
