@@ -31,6 +31,7 @@
   font-size: 16px;
   line-height: 24px;
   font-weight: 500;
+  text-decoration: none;
 
   &:hover {
     color: #9b9997;
@@ -54,17 +55,18 @@
     padding-top: 10px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-bottom: 60px;
+    padding-bottom: 75px;
 
     & form {
       display: flex;
       align-items: center;
       background: rgba(255, 255, 255, 0.15);
       border-radius: 21px;
-      margin-bottom: 25px;
+      margin-bottom: 23px;
       padding-left: 12px;
-      padding-top: 12px;
-      padding-bottom: 12px;
+      padding-right: 7px;
+      padding-top: 7px;
+      padding-bottom: 7px;
     }
   }
 
@@ -86,10 +88,14 @@
 
   .navigation__list {
     flex-direction: column;
+    margin-top: 0;
+    margin-bottom: 42px;
   }
 
   .navigation__item {
-    margin-bottom: 20px;
+    margin-bottom: 0;
+    margin-top: 21px;
+    margin-left: 25px;
 
     & a {
       color: #ffffff;
@@ -107,13 +113,14 @@
   }
 
   .navigation__tablet-item {
-    margin-bottom: 10px;
+    margin-bottom: 18px;
 
     & a {
       font-weight: 500;
       font-size: 18px;
       line-height: 23px;
       color: rgba(255, 255, 255, 0.75);
+      text-decoration: none;
     }
   }
 
@@ -122,14 +129,30 @@
     font-size: 18px;
     line-height: 23px;
     color: #ffffff;
+    text-decoration: none;
 
-    margin-top: 20px;
+    margin-top: 42px;
   }
 }
 
 @media (max-width: 767px) {
   .navigation {
-    padding: 20px 15px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 43px;
     max-width: 320px;
+
+    & form {
+      margin-bottom: 13px;
+    }
+  }
+
+  .navigation__list {
+    margin-bottom: 30px;
+  }
+
+  .navigation__login {
+    margin-top: 35px;
   }
 }

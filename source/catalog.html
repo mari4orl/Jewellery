@@ -5,14 +5,17 @@
     <title>Jewellery</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <meta name="description" content="Печатные платы, компоненты для светотехники, электронные комплектующие">
-    <meta name="keywords" content="Печатные платы, светотехника">
+    <meta name="description" content="Ювелирные изделия купить онлайн">
+    <meta name="keywords" content="Ювелирные изделия, ожерелья, серьги">
     <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.min.js"></script>
-    <link rel="stylesheet" type="text/css" href="slick/slick.css"/>
     <link rel="preload" href="fonts/Poppins-Medium.woff2" as="font" type="font/woff2" crossorigin>
-    <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font" type="font/woff2" crossorigin>
     <link rel="preload" href="fonts/Poppins-Regular.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/Poppins-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/CormorantGaramond-Bold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/CormorantGaramond-SemiBold.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/CormorantGaramond-Medium.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="preload" href="fonts/CormorantGaramond-Italic.woff2" as="font" type="font/woff2" crossorigin>
   </head>
   <body>
     <div style="display:none">
@@ -33,7 +36,7 @@
           <input type="search" placeholder="Type here to search">
         </form>
         <a href="index.html" class="page-header__logo page-header__logo--inner" aria-label="Перейти на главную страницу">
-          <svg width="66" height="66" xml:space="preserve">
+          <svg width="66" height="66" viewBox="0 0 66 66" xml:space="preserve">
             <use xlink:href="#logo-icon"></use>
           </svg>
         </a>
@@ -81,9 +84,9 @@
         <label for="filter-toggle" class="main-catalog__toggle"><span>Filter</span></label>
         <form class="main-catalog__filters filters filters--nojs" action="https://echo.htmlacademy.ru" method="get">
           <div class="filters__block">
-            <input class="visually-hidden acc nojs" type="checkbox" name="Product" id="Product">
+            <input class="visually-hidden acc nojs" type="checkbox" name="Product" id="Product" checked>
             <label for="Product" class="filters__title">Product</label>
-            <ul class="filters__list filters__product-list">
+            <ul class="filters__list filters__list--product">
               <li class="filters__checkbox-item">
                 <label class="filters__checkbox-label">
                   <input class="visually-hidden" type="checkbox" name="Necklaces">
@@ -121,7 +124,7 @@
           <div class="filters__block">
             <input class="visually-hidden acc nojs" type="checkbox" name="Material" id="Material">
             <label for="Material" class="filters__title">Material</label>
-            <ul class="filters__list filters__material-list">
+            <ul class="filters__list filters__list--material">
               <li class="filters__checkbox-item">
                 <label class="filters__checkbox-label">
                   <input class="visually-hidden" type="checkbox" name="Gold ">
@@ -143,7 +146,7 @@
           <div class="filters__block">
             <input class="visually-hidden acc nojs" type="checkbox" name="Collection" id="Collection">
             <label for="Collection" class="filters__title">Collection</label>
-            <ul class="filters__list filters__material-list">
+            <ul class="filters__list filters__list--collection">
               <li class="filters__checkbox-item">
                 <label class="filters__checkbox-label">
                   <input class="visually-hidden" type="checkbox" name="Gold ">
@@ -163,7 +166,7 @@
           </div>
 
           <div class="filters__block filters__block--price">
-            <input class="visually-hidden acc nojs" type="checkbox" name="Price" id="Price">
+            <input class="visually-hidden acc nojs" type="checkbox" name="Price" id="Price" checked>
             <label for="Price" class="filters__title">Price</label>
             <div class="filters__range">
               <div class="filters__scale"></div>
@@ -178,7 +181,7 @@
           </div>
 
           <button class="filters__submit" type="submit" name="submit">Apply</button>
-          <button class="filters__reset" type="reset" name="reset">Clear all</button>
+          <button class="filters__reset" type="reset" name="reset">Clear All</button>
         </form>
 
         <ul class="main-catalog__catalog catalog">
@@ -291,7 +294,7 @@
             <a href="card.html">
               <picture>
                 <source type="image/webp" media="(min-width: 1024px)" srcset="img/purple-gemstone-necklace-catalog-desk@1x.webp 1x, img/purple-gemstone-necklace-catalog-desk@2x.webp 2x">
-                <source type="image/webp" media="(min-width: 768px)" srcset="img/purple-gemstone-necklace-catalog-tab@1x.webp 1x, img/purple-gemstone-catalog-necklace-tab@2x.webp 2x">
+                <source type="image/webp" media="(min-width: 768px)" srcset="img/purple-gemstone-necklace-catalog-tab@1x.webp 1x, img/purple-gemstone-necklace-catalog-tab@2x.webp 2x">
                 <source type="image/webp" srcset="img/purple-gemstone-necklace-mob@1x.webp 1x, img/purple-gemstone-necklace-mob@2x.webp 2x">
 
                 <source media="(min-width: 1024px)" srcset="img/purple-gemstone-necklace-catalog-desk@1x.jpg 1x, img/purple-gemstone-necklace-catalog-desk@2x.jpg 2x">
@@ -407,7 +410,7 @@
         <ul class="page-footer__list page-footer__list--third">
           <li class="page-footer__item page-footer__item--fb">
             <a href="#">
-              <svg width="8" height="15" xml:space="preserve">
+              <svg width="8" height="15" viewBox="0 0 8 15" xml:space="preserve">
                 <use xlink:href="#fb-icon"></use>
               </svg>
               <span>Facebook</span>
@@ -415,7 +418,7 @@
           </li>
           <li class="page-footer__item page-footer__item--inst">
             <a href="#">
-              <svg width="15" height="15" xml:space="preserve">
+              <svg width="15" height="15" viewBox="0 0 15 15" xml:space="preserve">
                 <use xlink:href="#inst-icon"></use>
               </svg>
               <span>Instagram</span>
@@ -423,7 +426,7 @@
           </li>
           <li class="page-footer__item page-footer__item--pin">
             <a href="#">
-              <svg width="15" height="15" xml:space="preserve">
+              <svg width="15" height="15" viewBox="0 0 15 15" xml:space="preserve">
                 <use xlink:href="#pin-icon"></use>
               </svg>
               <span>Pinterest</span>
@@ -431,7 +434,7 @@
           </li>
           <li class="page-footer__item page-footer__item--tw">
             <a href="#">
-              <svg width="15" height="13" xml:space="preserve">
+              <svg width="15" height="13" viewBox="0 0 15 13" xml:space="preserve">
                 <use xlink:href="#tw-icon"></use>
               </svg>
               <span>Twitter</span>

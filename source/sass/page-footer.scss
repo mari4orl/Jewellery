@@ -217,8 +217,13 @@
     margin-bottom: 15px;
   }
 
+  .page-footer__list--second {
+    margin-bottom: 25px;
+  }
+
   .page-footer__list--third {
     display: flex;
+    padding: 0;
 
     & .page-footer__item {
       margin-bottom: 0;
@@ -227,6 +232,10 @@
 
     & span {
       display: none;
+    }
+
+    & svg {
+      margin: 0;
     }
   }
 
@@ -244,5 +253,6 @@
   .page-footer__item--tw svg {
     width: 20px;
     height: 18px;
+    padding-top: 3px;
   }
 }

@@ -42,8 +42,8 @@
 
   input[name="filter-toggle"]:checked ~ .main-catalog__toggle {
     position: absolute;
-    right: 150px;
-    top: 40px;
+    right: 147px;
+    top: 35px;
 
     width: 32px;
     height: 32px;
@@ -66,13 +66,12 @@
   .main-catalog {
     padding-left: 15px;
     padding-right: 15px;
-    padding-top: 40px;
+    padding-top: 39px;
     max-width: 320px;
   }
 
   input[name="filter-toggle"]:checked ~ .main-catalog__toggle {
-    right: 10px;
-    top: 25px;
+    right: 15px;
+    top: 22px;
   }
-
 }

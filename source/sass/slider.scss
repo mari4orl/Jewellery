@@ -13,6 +13,20 @@
   flex-direction: column;
 }
 
+.slider--card {
+  padding-top: 113px;
+  padding-bottom: 124px;
+
+  & .slider__title {
+    margin-bottom: 20px;
+  }
+
+  & .slider__link {
+    padding-bottom: 3px;
+    margin-bottom: 60px;
+  }
+}
+
 .slider__title {
   text-align: center;
   line-height: 44px;
@@ -22,6 +36,7 @@
 
   font-family: "Cormorant Garamond", serif;
 }
+
 
 .slider__link {
   align-self: center;
@@ -74,6 +89,11 @@
   margin-top: 23px;
 }
 
+
+.slider--card h3 {
+  margin-top: 20px;
+  margin-bottom: 6px;
+}
 
 .slider__item a {
   display: block;
@@ -189,6 +209,14 @@
     margin-bottom: 18px;
   }
 
+  .slider--card {
+    padding-bottom: 74px;
+
+    & .slider__link {
+      margin-bottom: 50px;
+    }
+  }
+
   .slider__link {
     padding-bottom: 4px;
     margin-bottom: 50px;
@@ -214,6 +242,10 @@
   .slick-dots {
     margin-top: 43px;
   }
+
+  .slider--card .slick-dots {
+    margin-top: 40px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -224,6 +256,11 @@
     padding-right: 0px;
     padding-top: 60px;
     padding-bottom: 54px;
+  }
+
+  .slider--card {
+    padding-top: 55px;
+    padding-bottom: 63px;
   }
 
   .slick-next,
@@ -240,9 +277,17 @@
     margin-bottom: 40px;
   }
 
+  .slider--card .slider__link {
+    margin-bottom: 40px;
+  }
+
   .slider__img-link h3 {
     margin-top: 15px;
     margin-bottom: 7px;
+  }
+
+  .slider--card h3 {
+    margin-top: 17px;
   }
 
   .slick-dots {
@@ -260,6 +305,10 @@
   .slick-dots li {
     display: none;
     margin-left: 135px;
+  }
+
+  .slider--card .slick-dots {
+    margin-top: 30px;
   }
 
   .slick-dots .slick-active {

@@ -35,7 +35,8 @@
   line-height: 34px;
   font-family: "Cormorant Garamond", serif;
   margin: 0;
-  margin-bottom: 20px;
+  margin-top: -5px;
+  margin-bottom: 15px;
   color: #1d1613;
 }
 
@@ -44,7 +45,7 @@
   line-height: 34px;
   color: #1d1613;
 
-  margin-bottom: 30px;
+  margin-bottom: 38px;
   display: block;
 }
 
@@ -56,7 +57,7 @@
   color: #9b9997;
   line-height: 21px;
   font-weight: 500;
-  margin-right: 35px;
+  margin-right: 31px;
 }
 
 .card__bold {
@@ -67,12 +68,12 @@
 
 .card__table {
   width: 100%;
-  margin-bottom: 45px;
+  margin-bottom: 51px;
 
   & tr {
     border-bottom: 1px solid #f6f5f4;
-    padding-bottom: 13px;
-    padding-top: 13px;
+    padding-bottom: 10px;
+    padding-top: 10px;
     display: flex;
     width: 100%;
     display: flex;
@@ -138,7 +139,7 @@
     max-width: 768px;
     padding-left: 45px;
     padding-right: 45px;
-    padding-top: 20px;
+    padding-top: 29px;
   }
 
   .card__photos {
@@ -152,7 +153,7 @@
     flex-direction: row;
     justify-content: space-between;
     margin: 0;
-    margin-top: 14px;
+    margin-top: 7px;
   }
 
   .card__img {
@@ -161,6 +162,10 @@
 
   .card__info {
     width: 319px;
+  }
+
+  .card__add {
+    margin-bottom: 16px;
   }
 
   .card__bottom {
@@ -187,15 +192,12 @@
   .card__photos {
     margin: 0;
     width: 100%;
-    margin-bottom: 50px;
+    margin-bottom: 42px;
+    position: relative;
 
     & .card__first-col {
       display: none;
     }
-  }
-
-  .card__photos {
-    position: relative;
 
     &::after {
       content: "1 of 4";
@@ -206,18 +208,34 @@
     }
   }
 
+  .card__price {
+    margin-bottom: 28px;
+  }
+
+  .card__description {
+    margin-right: 35px;
+  }
+
   .card__info {
     width: 100%;
   }
 
+  .card__table {
+    margin-bottom: 42px;
+  }
+
+  .card__add {
+    margin-bottom: 12px;
+  }
+
   .card__bottom {
     margin-right: 0;
-    margin-left: -56px;
+    margin-left: -50px;
 
     & span {
       text-align: center;
       margin-right: 0;
-      margin-left: 56px;
+      margin-left: 50px;
       max-width: 58px;
     }
   }

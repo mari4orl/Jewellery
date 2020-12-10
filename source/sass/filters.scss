@@ -7,7 +7,10 @@
 }
 
 .filters__block {
-  padding: 28px 25px;
+  padding-left: 25px;
+  padding-right: 25px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   border: 1px solid #a87b62;
   border-bottom: none;
   min-width: 250px;
@@ -17,6 +20,7 @@
 .filters__block--price {
   border-bottom: 1px solid #a87b62;
   margin-bottom: 35px;
+  padding-bottom: 16px;
 }
 
 .filters__title {
@@ -50,6 +54,7 @@
 .filters__checkbox-item {
   position: relative;
   padding-left: 25px;
+  margin-bottom: 6px;
 }
 
 .filters__checkbox-label {
@@ -83,6 +88,11 @@
   list-style: none;
   padding: 0;
   margin: 0;
+  margin-left: 9px;
+}
+
+.filters__list--product {
+  margin-bottom: -6px;
 }
 
 .filters__list,
@@ -107,12 +117,13 @@
 
 .filters input[id="Price"]:checked ~ .filters__price-controls {
   display: flex;
+  margin-top: 0;
 }
 
 .filters__submit,
 .filters__reset {
-  padding-top: 25px;
-  padding-bottom: 25px;
+  padding-top: 23px;
+  padding-bottom: 23px;
   padding-left: 10px;
   padding-right: 10px;
   border: 1px solid #a87b62;
@@ -127,7 +138,7 @@
 .filters__submit {
   color: #ffffff;
   background: #a87b62;
-  margin-bottom: 25px;
+  margin-bottom: 24px;
 
   &:hover {
     opacity: 0.7;
@@ -152,8 +163,8 @@
 .filters__range {
   position: relative;
 
-  margin-bottom: 17px;
-  margin-top: 32px;
+  margin-bottom: 10px;
+  margin-top: 25px;
 }
 
 .filters__scale {
@@ -261,30 +272,94 @@ input[type=number] {
     border-left: none;
     border-right: none;
     padding: 40px;
+    padding-top: 34px;
+    padding-bottom: 34px;
+  }
+
+  .filters__block--price {
+    margin-bottom: 40px;
   }
 
   .filters__block:first-child {
     border-top: none;
   }
 
+  .filters__title {
+    font-size: 18px;
+    line-height: 23px;
+
+    &::after {
+      background-image: url("../img/acc-tab.svg");
+      background-repeat: no-repeat;
+      width: 23px;
+      height: 13px;
+    }
+
+    &:hover {
+      opacity: 1;
+    }
+  }
+
+  .filters__list--product {
+    margin-top: 22px;
+    margin-bottom: -12px;
+  }
+
+  .filters__checkbox-item {
+    padding-left: 31px;
+    margin-bottom: 14px;
+  }
+
+  .filters__checkbox-label {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .filters__checkbox-indicator {
+    width: 18px;
+    height: 18px;
+  }
+
   .filters__scale {
     width: 304px;
 
     &::after {
-      width: 51.97%;
+      width: 52.9%;
     }
   }
 
-  .filters__title:hover {
-    opacity: 1;
+  .filters__range-toggle {
+    width: 18px;
+    height: 18px;
+    top: -8px;
   }
 
   .filters__range-toggle-max {
-    right: 130px;
+    right: 113px;
+  }
+
+  .filters__range {
+    margin-top: 33px;
+    margin-bottom: 14px;
+    margin-left: 10px;
+  }
+
+  .filters__max-price input,
+  .filters__min-price input {
+    font-size: 16px;
+    line-height: 21px;
+  }
+
+  .filters__min-price {
+    padding-left: 46px;
+    font-size: 16px;
+    line-height: 21px;
   }
 
   .filters__max-price {
-    padding-left: 125px;
+    padding-left: 131px;
+    font-size: 16px;
+    line-height: 21px;
   }
 
   .filters__submit,
@@ -292,6 +367,7 @@ input[type=number] {
     max-width: 362px;
     margin-right: 40px;
     margin-left: 40px;
+    padding-bottom: 22px;
 
     box-sizing: border-box;
   }
@@ -305,8 +381,8 @@ input[type=number] {
   }
 
   .filters__block {
-    padding-top: 28px;
-    padding-bottom: 28px;
+    padding-top: 23px;
+    padding-bottom: 25px;
     padding-left: 20px;
     padding-right: 20px;
   }
@@ -314,6 +390,12 @@ input[type=number] {
   .filters__block--price {
     padding-left: 10px;
     padding-right: 10px;
+    padding-bottom: 24px;
+    margin-bottom: 30px;
+  }
+
+  .filters__checkbox-indicator {
+    top: 3px;
   }
 
   .filters__submit,
@@ -322,27 +404,44 @@ input[type=number] {
     margin-left: 20px;
   }
 
+  .filters__submit {
+    margin-bottom: 20px;
+  }
+
+  .filters__range {
+    margin-left: 0;
+  }
+
   .filters__scale {
     width: 250px;
 
     &::after {
       width: 120px;
+      left: 57px;
     }
+  }
+
+  .filters__range-toggle-min {
+    left: 40px;
   }
 
   .filters__range-toggle-max {
     right: 55px;
   }
 
+  .filters__min-price {
+    padding-left: 31px;
+  }
+
   .filters__max-price {
-    padding-left: 95px;
+    padding-left: 93px;
   }
 
   label[for="Price"] {
     padding-left: 10px;
 
     &::after {
-      right: 12px;
+      right: 9px;
     }
   }
 }
