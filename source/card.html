@@ -26,7 +26,7 @@
     <header class="page-header page-header--colored">
       <div class="page-header__head">
         <input class="visually-hidden" type="checkbox" name="toggle" id="toggle">
-        <label for="toggle" class="page-header__toggle"></label>
+        <label for="toggle" class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></label>
 
         <form action="catalog.html">
           <button type="submit" name="search">
@@ -42,7 +42,7 @@
           </svg>
         </a>
         <a href="login.html" class="page-header__login">Login</a>
-        <a href="#" class="page-header__cart">
+        <a href="#" class="page-header__cart" aria-label="Перейти в корзину">
           <svg width="18" height="16" xml:space="preserve">
             <use xlink:href="#cart-icon"></use>
           </svg>
@@ -343,7 +343,7 @@
           <h2 class="page-footer__title">The good stuff in your inbox</h2>
           <p class="page-footer__text">News and updates from CH. No spam, we promise.</p>
           <form class="page-footer__form" action="https://echo.htmlacademy.ru" method="post" name="mailing">
-            <input type="email" name="email" value="" placeholder="Your E-mail" required>
+            <input type="email" name="email" placeholder="Your E-mail" aria-label="Зарегистрироваться" required>
             <button class="page-footer__btn" type="submit">Sign Up</button>
           </form>
         </section>
@@ -364,7 +364,7 @@
 
         <ul class="page-footer__list page-footer__list--third">
           <li class="page-footer__item page-footer__item--fb">
-            <a href="#">
+            <a href="#" aria-label="Ссылка на нас в Фейсбуке">
               <svg width="8" height="15" viewBox="0 0 8 15" xml:space="preserve">
                 <use xlink:href="#fb-icon"></use>
               </svg>
@@ -372,7 +372,7 @@
             </a>
           </li>
           <li class="page-footer__item page-footer__item--inst">
-            <a href="#">
+            <a href="#" aria-label="Ссылка на нас в Инстаграме">
               <svg width="15" height="15" viewBox="0 0 15 15" xml:space="preserve">
                 <use xlink:href="#inst-icon"></use>
               </svg>
@@ -380,7 +380,7 @@
             </a>
           </li>
           <li class="page-footer__item page-footer__item--pin">
-            <a href="#">
+            <a href="#" aria-label="Ссылка на нас в Пинтересте">
               <svg width="15" height="15" viewBox="0 0 15 15" xml:space="preserve">
                 <use xlink:href="#pin-icon"></use>
               </svg>
@@ -388,7 +388,7 @@
             </a>
           </li>
           <li class="page-footer__item page-footer__item--tw">
-            <a href="#">
+            <a href="#" aria-label="Ссылка на нас в Твиттере">
               <svg width="15" height="13" viewBox="0 0 15 13" xml:space="preserve">
                 <use xlink:href="#tw-icon"></use>
               </svg>
