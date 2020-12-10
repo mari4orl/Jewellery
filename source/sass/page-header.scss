@@ -145,6 +145,7 @@
     &::after {
       display: none;
     }
+    position: relative;
   }
 
   .page-header__head {
@@ -161,17 +162,18 @@
     background-color: #a87b62;
   }
 
-  .page-header input[type="checkbox"]:checked ~ .page-header__toggle {
+  .page-header--colored .page-header__toggle {
     background-image: url("../img/toggle-white.svg");
   }
 
-  .page-header input[type="checkbox"]:checked ~ .page-header__logo svg {
+  .page-header--colored .page-header__logo svg {
     stroke: #ffffff;
   }
 
-  .page-header input[type="checkbox"]:checked ~ .page-header__cart svg {
+  .page-header--colored .page-header__cart svg {
     stroke: #ffffff;
   }
+
 
   .page-header__toggle {
     cursor: pointer;

@@ -50,7 +50,6 @@
 @media (max-width: 1023px) {
   .navigation {
     display: none;
-    max-width: 768px;
     box-sizing: border-box;
     padding-top: 10px;
     padding-left: 45px;
@@ -77,8 +76,16 @@
     padding: 0;
   }
 
+  .navigation--nojs {
+    display: block;
+  }
+
   .navigation--opened {
     display: block;
+    position: absolute;
+    width: 100%;
+    background-color: #a87b62;
+    z-index: 1;
   }
 
   .navigation__tablet-list,
@@ -141,7 +148,6 @@
     padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 43px;
-    max-width: 320px;
 
     & form {
       margin-bottom: 13px;
