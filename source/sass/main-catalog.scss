@@ -18,7 +18,7 @@
   .main-catalog {
     max-width: 768px;
     padding-top: 50px;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-left: 45px;
     padding-right: 45px;
     flex-direction: column;
@@ -59,7 +59,7 @@
     background-position: center;
 
     & span {
-        display: none;
+      display: none;
     }
   }
 }

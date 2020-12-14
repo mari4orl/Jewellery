@@ -105,8 +105,8 @@
   background: transparent;
   border: 0;
   border-bottom: 1px solid #1d1613;
-
-	-webkit-appearance: none;
+  //
+  // -webkit-appearance: none;
 
   padding-top: 9px;
   padding-bottom: 9px;
@@ -131,7 +131,6 @@
 
   &:focus {
     border-bottom: 1px solid #a87b62;
-
   }
 }
 

@@ -106,7 +106,6 @@
 
 @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
   .inst__first-col {
-
     & .inst__first-picture {
       background-image: url("../img/8-inst-1-desktop@2x.jpg");
       background-size: 230px;
@@ -124,7 +123,6 @@
   }
 
   .inst__third-col {
-
     & .inst__first-picture {
       background-image: url("../img/4@2x.jpg");
       background-size: 232px;
@@ -216,7 +214,6 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .inst__first-col {
-
       & .inst__first-picture {
         background-image: url("../img/8-tab@2x.jpg");
         background-size: 133px;
@@ -234,7 +231,6 @@
     }
 
     .inst__third-col {
-
       & .inst__first-picture {
         background-image: url("../img/4-tab@2x.jpg");
         background-size: 134px;
@@ -336,7 +332,6 @@
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .inst__first-col {
-
       & .inst__first-picture {
         background-image: url("../img/8-mob@2x.jpg");
         background-size: 130px;
@@ -354,7 +349,6 @@
     }
 
     .inst__third-col {
-
       & .inst__first-picture {
         background-image: url("../img/4-mob@2x.jpg");
         background-size: 145px;
