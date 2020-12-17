@@ -8,7 +8,7 @@
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: #ffffff;
 
   z-index: 2;
   cursor: pointer;
@@ -80,6 +80,10 @@
   &:hover {
     opacity: 0.7;
   }
+
+  &:focus {
+    opacity: 0.5;
+  }
 }
 
 .login__fieldset {
@@ -97,23 +101,24 @@
   margin: 0;
   margin-bottom: 23px;
 
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Georgia", serif;
 }
 
 .login__fieldset input[type="email"],
 .login__fieldset input[type="password"] {
   background: transparent;
   border: 0;
+  border-radius: 0;
   border-bottom: 1px solid #1d1613;
-  //
-  // -webkit-appearance: none;
+
+  -webkit-appearance: none;
 
   padding-top: 9px;
   padding-bottom: 9px;
 
   box-sizing: border-box;
 
-  color: #9b9997;
+  color: #1d1613;
   outline: none;
   line-height: 22px;
 

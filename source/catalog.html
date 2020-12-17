@@ -28,12 +28,13 @@
         <label for="toggle" class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></label>
 
         <form action="catalog.html">
-          <button type="submit" name="search">
+          <button type="submit" name="search" aria-label="Поиск товаров">
             <svg width="14" height="14" xml:space="preserve">
               <use xlink:href="#search-icon"></use>
             </svg>
           </button>
-          <input type="search" placeholder="Type here to search">
+          <input type="search" id="search" placeholder="Type here to search">
+          <label for="search" class="visually-hidden">Поиск товаров</label>
         </form>
         <a href="index.html" class="page-header__logo page-header__logo--inner" aria-label="Перейти на главную страницу">
           <svg width="66" height="66" viewBox="0 0 66 66" xml:space="preserve">
@@ -80,11 +81,14 @@
       </div>
 
       <div class="main-catalog">
-        <input class="visually-hidden" type="checkbox" name="filter-toggle" id="filter-toggle">
-        <label for="filter-toggle" class="main-catalog__toggle"><span>Filter</span></label>
+        <label for="filter-toggle" class="main-catalog__toggle">
+          <span>Filter</span>
+          <input class="visually-hidden" type="checkbox" name="filter-toggle" id="filter-toggle">
+        </label>
+
         <form class="main-catalog__filters filters filters--nojs" action="https://echo.htmlacademy.ru" method="get">
           <div class="filters__block">
-            <input class="visually-hidden acc nojs" type="checkbox" name="Product" id="Product" checked>
+            <input class="visually-hidden filters-acc nojs" type="checkbox" name="Product" id="Product" checked>
             <label for="Product" class="filters__title">Product</label>
             <ul class="filters__list filters__list--product">
               <li class="filters__checkbox-item">
@@ -122,7 +126,7 @@
           </div>
 
           <div class="filters__block">
-            <input class="visually-hidden acc nojs" type="checkbox" name="Material" id="Material">
+            <input class="visually-hidden filters-acc nojs" type="checkbox" name="Material" id="Material">
             <label for="Material" class="filters__title">Material</label>
             <ul class="filters__list filters__list--material">
               <li class="filters__checkbox-item">
@@ -144,7 +148,7 @@
           </div>
 
           <div class="filters__block">
-            <input class="visually-hidden acc nojs" type="checkbox" name="Collection" id="Collection">
+            <input class="visually-hidden filters-acc nojs" type="checkbox" name="Collection" id="Collection">
             <label for="Collection" class="filters__title">Collection</label>
             <ul class="filters__list filters__list--collection">
               <li class="filters__checkbox-item">
@@ -166,13 +170,13 @@
           </div>
 
           <div class="filters__block filters__block--price">
-            <input class="visually-hidden acc nojs" type="checkbox" name="Price" id="Price" checked>
+            <input class="visually-hidden filters-acc nojs" type="checkbox" name="Price" id="Price" checked>
             <label for="Price" class="filters__title">Price</label>
             <div class="filters__range">
               <div class="filters__scale"></div>
               <div class="scale"></div>
-              <button type="button" class="filters__range-toggle filters__range-toggle-min"></button>
-              <button type="button" class="filters__range-toggle filters__range-toggle-max"></button>
+              <button type="button" class="filters__range-toggle filters__range-toggle-min"><span class="visually-hidden">Минимальная цена</span></button>
+              <button type="button" class="filters__range-toggle filters__range-toggle-max"><span class="visually-hidden">Максимальная цена</span></button>
             </div>
             <div class="filters__price-controls">
               <label class="filters__min-price">$ <input type="number" name="min-price" value="55"></label>
@@ -183,6 +187,7 @@
           <button class="filters__submit" type="submit" name="submit">Apply</button>
           <button class="filters__reset" type="reset" name="reset">Clear All</button>
         </form>
+        <div class="main-catalog__overlay"></div>
 
         <ul class="main-catalog__catalog catalog">
           <li class="catalog__item">
@@ -196,7 +201,7 @@
                 <source media="(min-width: 768px)" srcset="img/double-pearl-earrings-tab@1x.jpg 1x, img/double-pearl-earrings-tab@2x.jpg 2x">
                 <img src="img/double-pearl-earrings-mob@1x.jpg" srcset="img/double-pearl-earrings-mob@2x.jpg 2x" alt="Жемчужные серьги">
               </picture>
-              <h3>Double pearl earrings</h3>
+              <h2>Double pearl earrings</h2>
             </a>
             <span>$ 115</span>
           </li>
@@ -211,7 +216,7 @@
                 <source media="(min-width: 768px)" srcset="img/black-choker-gold-bead-tab@1x.jpg 1x, img/black-choker-gold-bead-tab@2x.jpg 2x">
                 <img src="img/black-choker-gold-bead-mob@1x.jpg" srcset="img/black-choker-gold-bead-mob@2x.jpg 2x" alt="Чокер с золотым кулоном">
               </picture>
-              <h3>Choker with gold bead</h3>
+              <h2>Choker with gold bead</h2>
             </a>
             <span>$ 55</span>
           </li>
@@ -226,7 +231,7 @@
                 <source media="(min-width: 768px)" srcset="img/gold-layered-necklace-tab@1x.jpg 1x, img/gold-layered-necklace-tab@2x.jpg 2x">
                 <img src="img/gold-layered-necklace-mob@1x.jpg" srcset="img/gold-layered-necklace-mob@2x.jpg 2x" alt="Золотое ожерелье">
               </picture>
-              <h3>Gold layered necklace</h3>
+              <h2>Gold layered necklace</h2>
             </a>
             <span>$ 155</span>
           </li>
@@ -241,7 +246,7 @@
                 <source media="(min-width: 768px)" srcset="img/blue-gemstone-pendant-tab@1x.jpg 1x, img/blue-gemstone-pendant-tab@2x.jpg 2x">
                 <img src="img/blue-gemstone-pendant-mob@1x.jpg" srcset="img/blue-gemstone-pendant-mob@2x.jpg 2x" alt="Кулон с голубым камнем">
               </picture>
-              <h3>Blue gemstone pendant</h3>
+              <h2>Blue gemstone pendant</h2>
             </a>
             <span>$ 105</span>
           </li>
@@ -256,7 +261,7 @@
                 <source media="(min-width: 768px)" srcset="img/boho-earrings-tab@1x.jpg 1x, img/boho-earrings-tab@2x.jpg 2x">
                 <img src="img/boho-earrings-mob@1x.jpg" srcset="img/boho-earrings-mob@2x.jpg 2x" alt="Бирюзовые серьги">
               </picture>
-              <h3>Boho earrings</h3>
+              <h2>Boho earrings</h2>
             </a>
             <span>$ 75</span>
           </li>
@@ -271,7 +276,7 @@
                 <source media="(min-width: 768px)" srcset="img/bird-necklace-tab@1x.jpg 1x, img/bird-necklace-tab@2x.jpg 2x">
                 <img src="img/bird-necklace-mob@1x.jpg" srcset="img/bird-necklace-mob@2x.jpg 2x" alt="Тонкое золотое ожерелье">
               </picture>
-              <h3>Gold bird necklace</h3>
+              <h2>Gold bird necklace</h2>
             </a>
             <span>$ 135</span>
           </li>
@@ -286,7 +291,7 @@
                 <source media="(min-width: 768px)" srcset="img/black-leather-choker-necklace-tab@1x.jpg 1x, img/black-leather-choker-necklace-tab@2x.jpg 2x">
                 <img src="img/black-leather-choker-necklace-mob@1x.jpg" srcset="img/black-leather-choker-necklace-mob@2x.jpg 2x" alt="Чёрный кожаный чокер">
               </picture>
-              <h3>Black leather choker</h3>
+              <h2>Black leather choker</h2>
             </a>
             <span>$ 85</span>
           </li>
@@ -301,7 +306,7 @@
                 <source media="(min-width: 768px)" srcset="img/purple-gemstone-necklace-catalog-tab@1x.jpg 1x, img/purple-gemstone-necklace-catalog-tab@2x.jpg 2x">
                 <img src="img/purple-gemstone-necklace-mob@1x.jpg" srcset="img/purple-gemstone-necklace-mob@2x.jpg 2x" alt="Ожерелье с аметистом">
               </picture>
-              <h3>Necklace with amethyst</h3>
+              <h2>Necklace with amethyst</h2>
             </a>
             <span>$ 145</span>
           </li>
@@ -316,7 +321,7 @@
                 <source media="(min-width: 768px)" srcset="img/elephant-earrings-tab@1x.jpg 1x, img/elephant-earrings-tab@2x.jpg 2x">
                 <img src="img/elephant-earrings-mob@1x.jpg" srcset="img/elephant-earrings-mob@2x.jpg 2x" alt="Серьги со слониками">
               </picture>
-              <h3>Elephant earrings</h3>
+              <h2>Elephant earrings</h2>
             </a>
             <span>$ 95</span>
           </li>
@@ -331,7 +336,7 @@
                 <source media="(min-width: 768px)" srcset="img/threader-necklace-closeup-tab@1x.jpg 1x, img/threader-necklace-closeup-tab@2x.jpg 2x">
                 <img src="img/threader-necklace-closeup-mob@1x.jpg" srcset="img/threader-necklace-closeup-mob@2x.jpg 2x" alt="Серебряное ожерелье">
               </picture>
-              <h3>Threader necklace</h3>
+              <h2>Threader necklace</h2>
             </a>
             <span>$ 115</span>
           </li>
@@ -346,7 +351,7 @@
                 <source media="(min-width: 768px)" srcset="img/origami-crane-necklace-tab@1x.jpg 1x, img/origami-crane-necklace-tab@2x.jpg 2x">
                 <img src="img/origami-crane-necklace-mob@1x.jpg" srcset="img/origami-crane-necklace-mob@2x.jpg 2x" alt="Кулон с оригами">
               </picture>
-              <h3>Origami crane necklace</h3>
+              <h2>Origami crane necklace</h2>
             </a>
             <span>$ 105</span>
           </li>
@@ -361,7 +366,7 @@
                 <source media="(min-width: 768px)" srcset="img/marble-earrings-tab@1x.jpg 1x, img/marble-earrings-tab@2x.jpg 2x">
                 <img src="img/marble-earrings-mob@1x.jpg" srcset="img/marble-earrings-mob@2x.jpg 2x" alt="Мраморные серьги">
               </picture>
-              <h3>Marble earrings</h3>
+              <h2>Marble earrings</h2>
             </a>
             <span>$ 95</span>
           </li>

@@ -29,14 +29,15 @@
         <label for="toggle" class="page-header__toggle"><span class="visually-hidden">Открыть меню</span></label>
 
         <form action="catalog.html">
-          <button type="submit" name="search">
+          <button type="submit" name="search" aria-label="Поиск товаров">
             <svg width="14" height="14" xml:space="preserve">
               <use xlink:href="#search-icon"></use>
             </svg>
           </button>
-          <input type="search" placeholder="Type here to search">
+          <input type="search" id="search" placeholder="Type here to search">
+          <label for="search" class="visually-hidden">Поиск товаров</label>
         </form>
-        <a href="#" class="page-header__logo">
+        <a class="page-header__logo" aria-label="Логотип компании">
           <svg width="66" height="66" viewBox="0 0 66 66" xml:space="preserve">
             <use xlink:href="#logo-icon"></use>
           </svg>

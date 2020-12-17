@@ -5,7 +5,10 @@ var toggle = document.querySelector('#toggle');
 var header = document.querySelector('.page-header');
 
 var filters = document.querySelector('.filters');
-var filtersToggle = document.querySelector('.main-catalog__toggle');
+var filtersToggleLabel = document.querySelector('.main-catalog__toggle');
+var filtersToggle = document.querySelector('#filter-toggle');
+
+var filtersAccList = document.querySelectorAll('.filters-acc');
 
 //Главное меню
 
@@ -16,9 +19,11 @@ toggle.addEventListener('change', function() {
   if (this.checked) {
      navigation.classList.add('navigation--opened');
      header.classList.add('page-header--colored');
+     document.body.classList.add('stop-scrolling');
   } else {
     navigation.classList.remove('navigation--opened');
     header.classList.remove('page-header--colored');
+    document.body.classList.remove('stop-scrolling');
   }
 });
 
@@ -41,10 +46,20 @@ for (var i = 0; i < accList.length; i++) {
 if (filters) {
   filters.classList.remove('filters--nojs');
 
-  filtersToggle.addEventListener('click', function() {
-    filters.classList.toggle('filters--opened');
-    filtersToggle.classList.toggle('main-catalog__toggle--none');
+  filtersToggle.addEventListener('change', function() {
+    if (this.checked) {
+       filters.classList.add('filters--opened');
+       filtersToggleLabel.classList.add('main-catalog__toggle--opened');
+    } else {
+      filters.classList.remove('filters--opened');
+      filtersToggleLabel.classList.remove('main-catalog__toggle--opened');
+    }
   });
+
+  for (var i = 0; i < filtersAccList.length; i++) {
+    var filtersAcc = filtersAccList[i];
+    filtersAcc.classList.remove('nojs');
+  }
 }
 
 

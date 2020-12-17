@@ -25,6 +25,18 @@
     position: relative;
   }
 
+  .filters--opened ~ .main-catalog__overlay {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+
+    z-index: 1;
+    cursor: pointer;
+  }
+
   .main-catalog__toggle {
     display: block;
     max-width: 678px;
@@ -40,12 +52,12 @@
     padding-bottom: 22px;
   }
 
-  input[name="filter-toggle"]:checked ~ .main-catalog__toggle {
-    z-index: 1;
+  .main-catalog__toggle--opened {
+    z-index: 3;
 
     position: absolute;
-    right: 147px;
-    top: 35px;
+    right: 150px;
+    top: -320px;
 
     width: 32px;
     height: 32px;
@@ -72,8 +84,8 @@
     max-width: 320px;
   }
 
-  input[name="filter-toggle"]:checked ~ .main-catalog__toggle {
-    right: 15px;
-    top: 22px;
+  .main-catalog__toggle--opened {
+    right: 10px;
+    top: -320px;
   }
 }

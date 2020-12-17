@@ -8,7 +8,7 @@
 }
 
 .faq__title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Georgia", serif;
   font-weight: bold;
   font-size: 34px;
   line-height: 44px;
@@ -77,6 +77,10 @@
     right: 0;
     top: 5px;
   }
+}
+
+.faq__block:focus-within {
+  outline: 1px solid #000000;
 }
 
 .faq input[type="checkbox"]:checked ~ .faq__title-question::after {

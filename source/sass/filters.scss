@@ -15,6 +15,10 @@
   border-bottom: none;
   min-width: 250px;
   box-sizing: border-box;
+
+  &:focus-within {
+    outline: 1px solid #000000;
+  }
 }
 
 .filters__block--price {
@@ -59,6 +63,10 @@
   position: relative;
   padding-left: 25px;
   margin-bottom: 6px;
+
+  &:focus-within {
+    outline: 1px solid #000000;
+  }
 }
 
 .filters__checkbox-label {
@@ -240,13 +248,13 @@
 
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
-  // -webkit-appearance: none;
+  appearance: none;
   margin: 0;
 }
-//
-// input[type="number"] {
-//   -moz-appearance: textfield;
-// }
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
 
 @media (max-width: 1023px) {
   .filters {
@@ -260,6 +268,8 @@ input[type="number"]::-webkit-inner-spin-button {
     margin: 0 auto;
     padding-left: 0;
     padding-bottom: 40px;
+
+    z-index: 2;
   }
 
   .filters--nojs {
@@ -269,6 +279,7 @@ input[type="number"]::-webkit-inner-spin-button {
   .filters--opened {
     display: flex;
     position: absolute;
+    top: -305px;
     left: 50%;
     transform: translate(-50%, 0);
   }

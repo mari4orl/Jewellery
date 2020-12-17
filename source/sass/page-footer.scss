@@ -11,7 +11,6 @@
   box-sizing: border-box;
 
   display: flex;
-  flex-wrap: wrap;
 }
 
 .page-footer__mailing {
@@ -21,7 +20,7 @@
 }
 
 .page-footer__title {
-  font-family: "Cormorant Garamond", serif;
+  font-family: "Cormorant Garamond", "Georgia", serif;
   font-size: 34px;
   line-height: 44px;
   margin: 0;
@@ -50,7 +49,7 @@
     font-size: 14px;
     line-height: 21px;
     font-weight: 500;
-    color: #9b9997;
+    color: #ffffff;
     outline: none;
   }
 }
@@ -105,7 +104,8 @@
 }
 
 .page-footer__list--second {
-  margin-right: 8.7%;
+  margin-right: auto;
+  padding-right: 10px;
 }
 
 .page-footer__list--third {
@@ -130,7 +130,6 @@
 .page-footer__item svg {
   fill: #ffffff;
   margin-right: 10px;
-  margin-left: 5px;
 }
 
 .page-footer__item a:hover svg {
@@ -138,7 +137,8 @@
 }
 
 .page-footer__item--fb svg {
-  margin-right: 18px;
+  margin-right: 13px;
+  margin-left: 5px;
 }
 
 @media (max-width: 1023px) {
@@ -149,6 +149,7 @@
     padding-left: 45px;
     padding-right: 152px;
     justify-content: space-between;
+    flex-wrap: wrap;
   }
 
   .page-footer__mailing {
